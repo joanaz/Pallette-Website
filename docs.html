@@ -6,7 +6,7 @@
 	<link rel="Shortcut Icon" type="image/ico" href="imgs/favicon.ico" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
   
-	<title>Airy Photography Theme</title>
+	<title>Pallette</title>
   
 	<!-- CSS _____________________________________________-->
 	<link href='http://fonts.googleapis.com/css?family=Josefin+Sans:400,600&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
@@ -14,7 +14,7 @@
 	<link rel="stylesheet" href="css/icomoon.css" media="screen" />
 	<link rel="stylesheet" href="css/magnificpopup.css" media="screen" />
 	<link rel="stylesheet" href="css/columns.min.css" media="screen" />
-	<link rel="stylesheet" href="style.css" media="screen" />  
+	<link rel="stylesheet" href="css/style.css" media="screen" />  
 
 	<!-- Fixing Internet Explorer ______________________________________-->
 	<!--[if lt IE 9]>
@@ -35,59 +35,36 @@
 		<div class="wrapper">
 
 			<!-- Logo __-->
-			<h1 id="logo">
+			<!-- <h1 id="logo">
 				<a href="index.html" rel="home" id="logo-svg-animated"> 
 					<img src="imgs/logo.png" alt="logo" />
 				</a>
-			</h1>
+			</h1> -->
 		
+			<a href="index.html" rel="home">
+				<img src="imgs/logo-tongue.png" alt="logo">
+			</a>
+			
 			<!-- Main menu __-->
 			<nav id="mainmenu" role="navigation">
-			
+				
 				<div id="menu-burger"><i class="icon-menu"></i></div>
-				<div id="searchicon">
-					<i class="icon-search"></i>
-					<form action="/" method="get" id="searchbar">
-						<fieldset>
-							<input type="text" name="s" id="searchbar-input" value="" />
-							<button type="submit" id="searchbar-submit"></button>
-						</fieldset>
-					</form>				
-				</div>
+
 				<div id="menu">
 					<ul>
-						<li class=""><a href="index.html">Home</a>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="about.html">What is it?</a></li>
+						<li class="current-menu-item menu-item-has-children"><a href="docs.html">Make it!</a>
 							<ul class="sub-menu">
-								<li><a href="index.html">Fullscreen Image</a></li>
-								<li><a href="gallery-fullscreen.html">Fullscreen Gallery</a></li>
-								<li><a href="gallery-fullscreen-kenburns.html">Fullscreen KenBurns</a></li>
-								<li><a href="gallery-fullscreen-video.html">Fullscreen Video</a></li>
+								<li><a href="docs.html#01">Get Started</a></li>
+								<li><a href="docs.html#02">Mechanical</a></li>
+								<li><a href="docs.html#03">Electronics</a></li>
+								<li><a href="docs.html#04">Firmware</a></li>
+								<li><a href="docs.html#06">App</a></li>
 							</ul>
 						</li>
-						<li class="menu-item-has-children"><a href="#">Galleries</a>
-							<ul class="sub-menu">
-								<li><a href="gallery-masonry.html">Masonry Grid Gallery</a></li>
-								<li><a href="gallery-horizontal.html">Horizontal Gallery</a></li>
-								<li><a href="gallery-vertical.html">Vertical Gallery</a></li>
-								<li><a href="gallery-fullscreen.html">Fullscreen Gallery</a></li>
-								<li><a href="before-after.html">Before &amp; After</a></li>
-								<li><a href="photo-story.html">Photo Story</a></li>
-								<li><a href="password-protected.html">Password Protected</a></li>
-								<li><a href="gallery-archive.html">Gallery Albums</a></li>
-							</ul>
-						</li>
-						<li class="menu-item-has-children"><a href="#">Pages</a>
-							<ul class="sub-menu">
-								<li><a href="about.html">About</a></li>
-								<li><a href="pricing.html">Pricing</a></li>
-								<li><a href="elements.html">Typography & Elements</a></li>
-								<li><a href="404.html">404 Page</a></li>
-							</ul>
-						</li>
-						<li class="current-menu-item"><a href="docs.html">Docs</a></li>
-						<li><a href="blog.html">Journal</a>
-</li>
-						<li><a href="contact.html">Contact</a></li>
+						<li><a href="blog.html">Backstory</a></li>
+						<li><a href="contact.html">Get in Touch</a></li>
 					</ul>
 				</div>
 			</nav>
@@ -108,9 +85,9 @@
 
 		<div class="wrapper">
 			<!-- WYSIWYG starts here __-->
-			<h2>Docs</h2>
+			<h2>Instructions</h2>
 
-			<p>Welcome to the Airy HTML documentation. This guide was created for everyone that wants to create their own website using this template and is not that familiar with coding. All steps are thoroughly explained, so that using this template becomes as easy as it can get!</p>
+			<p>Welcome to the Pallette documentation. This guide was created for everyone that wants to create their own Pallette devices using our design files. All steps are thoroughly explained, so that developing Pallette becomes as easy as it can get!</p>
 
 			<div class="column-grid column-grid-3">
 				<div class="column column-span-1 column-push-0 column-first">
@@ -119,14 +96,12 @@
 				<div class="column column-span-2 column-push-0 column-last">
 					<ol>
 						<li><a href="#01">Get Started - Introduction</a></li>
-						<li><a href="#02">Creating Your Logo</a></li>
-						<li><a href="#03">Creating a Page with Columns and Images</a></li>
-						<li><a href="#04">Setting up a Gallery</a></li>
-						<li><a href="#05">Setting up Your Homepage</a></li>
-						<li><a href="#06">Blog Page Styles</a></li>
-						<li><a href="#07">Contact Page - Contact Form and Google Map</a></li>
-						<li><a href="#08">Custom Color Scheme</a></li>
-						<li><a href="#09">Preloading Images</a></li>
+						<li><a href="#02">Crafting the mouth piece</a></li>
+						<li><a href="#03">Assembling the electronic circuit</a></li>
+						<li><a href="#04">Programming the microcontroller</a></li>
+						<li><a href="#05">(Optional) Edit the firmware</a></li>
+						<li><a href="#06">(Optional) Install the app</a></li>
+						<li><a href="#07">(Optional) Develop the app</a></li>
 					</ol>
 				</div>
 			</div>
@@ -138,12 +113,12 @@
 					<h2 id="01" class="big no-margin">#01</h2>
 					<h3><strong class="small">Get Started</strong></h3>
 					<br />
-					<h4 class="small grey">Introduction, CSS classes, File Structure, Javascripts</h4>
+					<h4 class="small grey">Introduction, Materials, Physical, Electronics, Firmware, App,  Source files</h4>
 				</div>
 				<div class="column column-span-2 column-push-0 column-last">
 					<p>This template is very easy to use, it has comments all over its files and clearly visible and understandable element structure. First, keep the copy of the template in a folder and copy the whole folder to your server or test folder on your computer. Make sure the index.html file is in the root of your server. This template uses <strong>PHP for a contact form</strong>, so make sure that your server has PHP installed and enabled for you. Other than that, it is pure HTML / CSS / Javascript. 
 					</p>
-					<h5>Common CSS classes</h5>
+					<h5>Physical</h5>
 					<p>Airy uses many css classes that you can re-use to create a perfect page.</p>
 					<p>For example:</p>
 					<ul>
@@ -163,12 +138,57 @@
 					<p class="notice success"><strong>Tip:</strong> See <strong>editor-style.css</strong> in the css folder for common classes to use on elements.</p>
 					<br />
 
-					<h5>File structure</h5>
-					<p>Every .html file is in the root folder of the template. Javascript files are in the <strong>js</strong> folder, images in the <strong>imgs</strong> folder. Contact form files reside in the <strong>contact</strong> folder. Main css files (style.css and editor-style.css) are in the root folder. Plugin-related CSS files are in the <strong>css</strong> folder.</p>
+
+					<!-- Electronics -->
+					<h5>Electronics</h5>
+					<p>You will need:
+					<ul>
+						<li>Hardware design files</li>
+					</ul>
+				</p>
+
+					<p>The schematics and the PCB are designed using Altium &reg; Designer, a professional PCB design software for the Microsoft Windows environment. However, you don't need to obtain a copy of Altium &reg; Designer if you don't wish to modify the design. </p>
+
+					<p>All the design files, gerber files and docs are available on this <a>Github repo</a>. You can just send the <strong>Fabrication.zip</strong> on the repo to a PCB manufacturer to receive the Pallette PCBs. Here you can either use the specs list on the design files, or choose your own specs. If you were to use our specs, you will get white 0.014" thin 370HR boards with gold immersion finish and v-scores, which will be quite pricey (>$100 each for 10). </p>
+					<img>
+
+					<p>Or you can get them for $33 each with this <a>special deal</a>. However the boards will be 4x thicker (0.062") with lead free solder finish, and you'll have to cut the boards yourself.</p>
+					<img>
+
+					<p>After you have received the PCBs from the manufacturer, you can either purchase the components as listed on the Bill of Materials (BOM) in the repo and solder the components yourself, or send your blank PCBs and the <strong>Assembly.zip</strong> to a PCB assembler to receive assembled PCBs. The video below shows you how to solder PCBs yourself.</p>
+					<video></video>
+					<p>Now your boards should look like this.</p>
+					<img>
 					
-					<h5>Javascripts</h5>
-					<p>In each .html file, we only load jQuery (or the google map javascript files) in &lt;head&gt;. All other scripts are loaded before the closing body tag. This is best practice. File <strong>script.js</strong> must always be loaded last.</p>
+
+					<!-- Firmware -->
+					<h5>Firmware</h5>
+					<p>You will need:
+					<ul>
+						<li>Firmware files</li>
+						<li>Programming cable</li>
+						<li>CC Debugger</li>
+						<li>CC Debugger driver</li>
+						<li>Bluegiga SDK</li>
+					</ul>
+				</p>
+					<p>The firmware runs on the Bluetooth enabled BLE130 microcontroller. The files are on this <a>Github repo</a>. </p>
+
+					<p>To program the microcontroller, you will need this cable.</p>
+					<img>
 					
+					<p>and CC Debugger</p>
+					<img>
+
+					<p>You will need to install the <a>CC Debugger driver</a>, and the <a>Bluegiga SDK</a>.</p>
+
+
+
+					<!-- App -->
+					<h5>App</h5>
+					<p>The Android app is mainly for debugging purposes. The files are on this <a>Github repo</a>. </p>
+					<img>
+
 				</div>
 			</div>
 
@@ -179,9 +199,9 @@
 			<div class="column-grid column-grid-3">
 				<div class="column column-span-1 column-push-0 column-first">
 					<h2 id="02" class="big no-margin">#02</h2>
-					<h3><strong class="small">Creating Your Logo</strong></h3>
+					<h3><strong class="small">Crafting the mouth piece</strong></h3>
 					<br />
-					<h4 class="small grey">Photoshop, SVG animation, Logo size</h4>
+					<h4 class="small grey">Mouth guard, Mouth mold</h4>
 				</div>
 				<div class="column column-span-2 column-push-0 column-last">
 					<p>Your logo should be created in vector shapes. You can create it in Photoshop, Illustrator, Inkscape, or any other software that can produce a vector shape and export it to PNG. Your logo can be any size, the demo logo size is 64x64px.</p>
@@ -251,9 +271,9 @@ if ( $svg_logo.length > 0 ) {
 			<div class="column-grid column-grid-3">
 				<div class="column column-span-1 column-push-0 column-first">
 					<h2 id="03" class="big no-margin">#03</h2>
-					<h3><strong class="small">Creating a Page with Columns and Images</strong></h3>
+					<h3><strong class="small">Assembling the electronic circuit </strong></h3>
 					<br />
-					<h4 class="small grey">HTML elements: Columns, Images, Captions, Team Members, Icons</h4>
+					<h4 class="small grey">PCB, Assembly, Soldering</h4>
 				</div>
 				<div class="column column-span-2 column-push-0 column-last">
 					<p>So we've got a page and want to fill it up with content. How to do it in a nice way? Our pages are full-width and a content stretching accross all that space would look too wide. Let's use some columns to break it up and ensure good readability!</p>
@@ -382,7 +402,7 @@ if ( $svg_logo.length > 0 ) {
 			<div class="column-grid column-grid-3">
 				<div class="column column-span-1 column-push-0 column-first">
 					<h2 id="04" class="big no-margin">#04</h2>
-					<h3><strong class="small">Setting up a Gallery</strong></h3>
+					<h3><strong class="small">Programming the microcontroller</strong></h3>
 					<br />
 					<h4 class="small grey"></h4>
 				</div>
@@ -611,7 +631,7 @@ jQuery('#kenburns').kenburns({
 			<div class="column-grid column-grid-3">
 				<div class="column column-span-1 column-push-0 column-first">
 					<h2 id="05" class="big no-margin">#05</h2>
-					<h3><strong class="small">Setting up Your Homepage</strong></h3>
+					<h3><strong class="small">(Optional) Edit the firmware</strong></h3>
 					<br />
 					<h4 class="small grey">Fullscreen One-Image Gallery, Text Carousel</h4>
 				</div>
@@ -659,7 +679,7 @@ jQuery('#kenburns').kenburns({
 			<div class="column-grid column-grid-3">
 				<div class="column column-span-1 column-push-0 column-first">
 					<h2 id="06" class="big no-margin">#06</h2>
-					<h3><strong class="small">Blog Page Styles</strong></h3>
+					<h3><strong class="small">(Optional) Install the app</strong></h3>
 					<br />
 					<h4 class="small grey"></h4>
 				</div>
@@ -707,7 +727,7 @@ jQuery('#kenburns').kenburns({
 			<div class="column-grid column-grid-3">
 				<div class="column column-span-1 column-push-0 column-first">
 					<h2 id="07" class="big no-margin">#07</h2>
-					<h3><strong class="small">Contact Page - Contact Form and Google Map</strong></h3>
+					<h3><strong class="small">(Optional) Develop the app</strong></h3>
 					<br />
 					<h4 class="small grey">PHP for Contact Form, Google Map</h4>
 				</div>
@@ -748,70 +768,7 @@ jQuery('#kenburns').kenburns({
 			</div>
 
 			<hr class="divider" />
-			<hr />
 
-			<!-- 08 -->
-			<div class="column-grid column-grid-3">
-				<div class="column column-span-1 column-push-0 column-first">
-					<h2 id="08" class="big no-margin">#08</h2>
-					<h3><strong class="small">Custom Color Scheme</strong></h3>
-					<br />
-					<h4 class="small grey">Creating Your Own Color Scheme</h4>
-				</div>
-				<div class="column column-span-2 column-push-0 column-last">
-					<p>To create your own color scheme, there is a <strong>my-color-scheme.css</strong> css file prepared for you in the <em>css</em> folder. Add it in the &lt;head&gt; right under style.css. This will override all colors with your own.</p>
-					<pre class="language-html">
-&lt;link rel="stylesheet" href="style.css" media="screen" /&gt;
-&lt;link rel="stylesheet" href="css/my-color-scheme.css" media="screen" /&gt;
-					</pre>
-					<p>The <strong>my-color-scheme.css</strong> file contains the default color for the light background and dark text. For a dark background and light text, load <strong>dark-color-scheme.css</strong> under style.css.</p>
-					<p>To change colors quickly, find and replace (Ctrl+H in your editor) the individual colors:</p>
-					<ol>
-						<li> Background (Default: #F7F6F5)</li>
-						<li>Links Color (Default: #EA6200)</li>
-						<li>Text Color (Default: #222)</li>
-						<li>Middle Grey Color (Default: #555)</li>
-						<li> Light Grey Color (Default: #ccc)</li>
-					</ol>
-					<p class="notice info"><strong>The background color</strong> is also used as a text color - content over images has to be white to be readable.</p>
-					<p class="notice info"><strong>The grey colors</strong> are used for input borders and various lines.</p>
-					<p class="notice success"><strong>Switch the logos</strong> white ↔ dark if you're using the dark color scheme.</p>
-				</div>
-			</div>
-
-			<hr class="divider" />
-			
-			
-			<!-- 09 -->
-			<div class="column-grid column-grid-3">
-				<div class="column column-span-1 column-push-0 column-first">
-					<h2 id="09" class="big no-margin">#09</h2>
-					<h3><strong class="small">Preloading Images</strong></h3>
-					<br />
-					<h4 class="small grey">How to Implement Lazy-loading</h4>
-				</div>
-				<div class="column column-span-2 column-push-0 column-last">
-					<p>Let's include these two scripts in the bottom of the page:</p>
-					<pre class="language-html">
-&lt;script src="js/imagesloaded.pkgd.min.js"&gt;&lt;/script&gt; 
-&lt;script src="js/jquery.lazyloadxt.min.js"&gt;&lt;/script&gt;
-					</pre>
-					<p>Also, for <strong>masonry gallery</strong> page where the isotope script is used, add this line after those two scripts:</p>
-					<pre class="language-html">
-&lt;script&gt;$.lazyLoadXT.updateEvent += ' layoutComplete';&lt;/script&gt;
-					</pre>
-					<p>In the case of <strong>horizontal gallery</strong>, add this line after:</p>
-					<pre class="language-html">
-&lt;script&gt;$.lazyLoadXT.scrollContainer = '.horizontal-gallery';&lt;/script&gt;
-					</pre>
-					<p>For every gallery or page with images (except the kenburns and before-after gallery!), <strong>change the <code>src</code> attribute to <code>data-src</code> in every image to utilise preloading:</strong></p>
-					<pre class="language-html">
-&lt;img data-src="imgs/image.jpg" alt="" /&gt;
-					</pre>
-				</div>
-			</div>
-
-			<hr class="divider" />
 
 
 			<!-- WYSIWYG ends here __-->
@@ -822,11 +779,13 @@ jQuery('#kenburns').kenburns({
 
 	<footer id="footer" role="contentinfo">
 		<p class="back-to-top"><a href="#header">Back to top ↑</a></p>
-		<p class="copyright">Airy Theme &copy; 2016</p>
+		<p class="copyright">Pallette &copy; 2016</p>
 		<ul class="social-icons">
-			<li><a href="#" target="_blank" title="Flickr"><i class="icon-flickr"></i></a></li>
-			<li><a href="#" target="_blank" title="Facebook"><i class="icon-facebook"></i></a></li>
-			<li><a href="#" target="_blank" title="Twitter"><i class="icon-twitter"></i></a></li>								
+			<li><a href="#" target="_blank" title="Email"><i class="icon-email"></i></a></li>
+			<li><a href="#" target="_blank" title="Twitter"><i class="icon-twitter"></i></a></li>
+			<li><a href="#" target="_blank" title="Vimeo"><i class="icon-vimeo"></i></a></li>
+			<li><a href="#" target="_blank" title="Ello"><i class="icon-ello"></i></a></li>
+			<li><a href="#" target="_blank" title="Github"><i class="icon-github"></i></a></li>						
 		</ul>	
 	</footer>
 
