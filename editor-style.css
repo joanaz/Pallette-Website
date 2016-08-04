@@ -152,7 +152,9 @@ em {
 }
 
 a {
-  color: #EA8E00;
+  color: #BAEEFE;
+
+  //#EA8E00;
   text-decoration: none;
   -webkit-transition: all .2s ease;
   -moz-transition: all .2s ease;
@@ -807,9 +809,14 @@ cite {
 }
 
 .colorful-content-box {
-  background: antiquewhite;
+  background: #BAEEFE;
   color: #F7F6F5;
   padding: 1em 2em;
+}
+
+.colorful-content-box a {
+  color: white;
+  font-weight: bold;
 }
 
 .colorful-content-box p {

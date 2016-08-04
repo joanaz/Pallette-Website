@@ -2,14 +2,14 @@
 
 /*
 CONTENTS: 
-	1. FORM ELEMENTS - inputs, selects, buttons, fields 
-	2. BODY DEFAULTS, LAYOUTS - html, body
-	3. MAIN WRAPPER - wrappers
-	4. HEADER - header, logo, navigation
-	5. CONTENT - inside content elements and classes (find more classes in editor-style.css)
-	6. FOOTER - footer
-	7. RESPONSIVNESS - media queries
-	
+  1. FORM ELEMENTS - inputs, selects, buttons, fields 
+  2. BODY DEFAULTS, LAYOUTS - html, body
+  3. MAIN WRAPPER - wrappers
+  4. HEADER - header, logo, navigation
+  5. CONTENT - inside content elements and classes (find more classes in editor-style.css)
+  6. FOOTER - footer
+  7. RESPONSIVNESS - media queries
+  
 */
 
 /* 1. FORM ELEMENTS
@@ -389,7 +389,10 @@ body.fullscreen #header {
 #header nav ul li a::after, #header nav ul li.current-menu-item > a::after, #header nav ul li.current-menu-parent > a::after, #header nav ul li.current_page_parent > a::after {
   content: "";
   display: block;
-  border-bottom: 2px solid #EA8E00;
+  border-bottom: 2px solid #BAEEFE;
+
+  //#EA8E00
+
   max-width: 100px;
   margin: 0 auto;
   z-index: -1;
