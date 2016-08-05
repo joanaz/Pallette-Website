@@ -62,8 +62,14 @@ html {
   font-size: 62.5%;
 }
 
+/*body {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 1.8em;
+  font-weight: 400;
+}*/
+
 body {
-  font-family: Politica, sans-serif;
+  font-family:'Politica', sans-serif;
   font-size: 1.8em;
   font-weight: 400;
 }
