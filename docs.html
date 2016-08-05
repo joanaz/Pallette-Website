@@ -206,7 +206,7 @@
 						</ul>
 					</p>
 
-					<p>The firmware runs on the Bluetooth enabled BLE130 microcontroller. The files are on this <a>Github repo</a>.</p>
+					<p>The firmware runs on the Bluetooth enabled BLE113 microcontroller. The files are on this <a>Github repo</a>.</p>
 
 					<p>To program the microcontroller, you will need this cable.</p>
 
@@ -412,7 +412,15 @@
 					<h4 class="small grey">Firmware, Bluegiga, BGScript</h4>
 				</div>
 				<div class="column column-span-2 column-push-0 column-last">
-					
+					<p>The Pallette firmware code contains few files. The pallette.bgproj is the project file that describes all the components included in the project. The hardware.xml configures the hardware features such as TX power, UART, SPI, hardware timers, and GPIO settings of the Bluegiga microcontroller. Refer to the <a>BLUETOOTH SMART MODULE CONFIGURATION GUIDE</a> for more details on these two files. </p>
+
+					<p>gatt.xml is the Generic Attribute Profile (GATT) database file. The GATT specifies the structure in which data is exchanged. The profile defines elements such as services and characteristics used in a profile, but it may also contain definitions for security and connection establishment parameters. For details on how to configure this file and practical samples, please refer to the <a>BLUETOOTH SMART PROFILE TOOLKIT DEVELOPER GUIDE</a></p>
+
+					<p>gattme.bgs is the main application source code, written in BGScript scripting language. 
+
+
+					For BGScript syntax, please refer to <a>BGSCRIPT SCRIPTING LANGUAGE DEVELOPER GUIDE</a>. For API definition, refer to <a>Bluetooth Smart Software API Documentation</a></p>
+
 					
 				</div>
 			</div>
