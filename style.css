@@ -195,11 +195,11 @@ html {
 }
 
 body {
-  background: #F7F6F5;
-  color: #222;
-  font-size: 1.6em;
-  letter-spacing: 0.03em;
-  overflow-x: hidden;
+    background: #9d033e;/*#F7F6F5;*/
+    color: #ffccdb; /* #ff9a8e;#222; */
+    font-size: 1.6em;
+    letter-spacing: 0.03em;
+    overflow-x: hidden;
 }
 
 /* 3. MAIN WRAPPER
