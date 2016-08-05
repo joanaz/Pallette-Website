@@ -14,8 +14,9 @@ CONTENTS:
 
 /* 1. FORM ELEMENTS
 _____________________________________ */
+
 input, textarea, select, input[type="submit"], input[type="button"], button, .button {
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: Politica, sans-serif;
   vertical-align: middle;
 }
 

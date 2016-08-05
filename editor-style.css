@@ -40,15 +40,30 @@ table {
   font-size: 1.4em;
 }
 
+@font-face {
+  font-family: Politica;
+  src: url(css/fonts/Politica.ttf);
+}
+
+@font-face {
+  font-family: Politica-Bold;
+  src: url(css/fonts/Politica_Bold.ttf);
+}
+
+@font-face {
+  font-family: Politica-Italic;
+  src: url(css/fonts/Politica_Italic.ttf);
+}
+
 /* WYSIWYG TEXT STYLES
 --------------------------------------------------------- */
 html {
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: Politica, sans-serif;
   font-size: 62.5%;
 }
 
 body {
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: Politica, sans-serif;
   font-size: 1.8em;
   font-weight: 400;
 }
