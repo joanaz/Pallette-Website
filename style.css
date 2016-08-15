@@ -195,7 +195,7 @@ html {
 }
 
 body {
-    background: #9d033e;/*#F7F6F5;*/
+    background: rgb(189, 43, 102);  /* #9d033e; #F7F6F5;*/
     color: #ffccdb; /* #ff9a8e;#222; */
     font-size: 1.6em;
     letter-spacing: 0.03em;
@@ -379,7 +379,7 @@ body.fullscreen #header {
 
 #header nav ul li a {
   display: block;
-  color: #222;
+  color: #fff;/* #222;*/
   font-size: 1.05em;
   padding: 0 0 1em 0;
   text-decoration: none;
