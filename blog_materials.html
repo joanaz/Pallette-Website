@@ -258,266 +258,306 @@
 	      <p><a href="blog_development.html">Read more</a></p>
 	    </div>
 	  </article>
-
 			  
-			  
-			</div>
+	  </div>
+	  
+	  <!-- END #blog-timeline -->
 
 			
+	  <!-- Shown Blog Post ___-->
+	  <div id="blog-post">
+	    <article class="entry post">
+	      <!-- Post meta ___-->
+	      <div class="entry-meta">
+		<div class="entry-date">
+		  <strong>24</strong> / May 2015
+		</div>
+		<div class="entry-category">
+		  <a href="#" rel="category tag">Articles</a>	
+		</div>
+		<div class="entry-tags">
+		  <a href="#" rel="tag">Photoshop</a> <a href="#" rel="tag">Tutorials</a> 			
+		</div>
+	      </div>
+	      
+	      <div class="entry-content">
+		<!-- Heading ___-->
+		<h2>Materials</h2>
+		
+		<!-- WYSIWYG content of post ___-->
+		<p>We will need to prepare the following materials in order to build the Pallette device.</p>
+		
+		<br/>
+		
+		<table>
+		  <th> Physical </th>
+		  <th> Electronics </th>
+		  <th> Programming </th>
+		  
+		  <tr> <!--class="colorful-content-box"-->
+		    <td style="text-align:left">
+		      <ul class="column column-span-1 column-push-0 column-first">
+			<input type="checkbox"> <a href="http://www.sisuguard.com/aero-guard/" target="_blank"> Sisu Mouthguard </a> </input><br>
+			<input type="checkbox"> <a> Food Grade Heat Shrink Tubing </a> </input><br>
+			<input type="checkbox"> <a> Food Grade .5 ID Tubing </a>  </input><br>
+			<input type="checkbox"> <a> Food Grade .5 OD Silicone Plug </a>  </input><br>
+			<input type="checkbox"> <a> Elastic Thread Sewing Kit </a>  </input><br>
+			<input type="checkbox"> <a> Medium Power Heat Gun </a>  </input><br>
+		      </ul>
+		    </td>
+		    
+		    <td style="text-align:left">
+		      <ul>
+			<li><a>Electronics design files </a></li>
+			<li><a> Type C Silver Oxide Batteries </a> </li>
+			<li>Ribbon cable 6 conductors 0.05 inch pitch</li>
+			<li>Soldering iron</li>
+			<li>Solder wire</li>
+			<li>Wire stripper</li>
+			<li>Wire cutter</li>
+		      </ul>
+		    </td> 
+		    <td style="text-align:left">
+		      <ul>
+			<li><a>Firmware files</a></li>
+			<li><a>Programming cable</a></li>
+			<li><a>CC Debugger</a></li>
+			<li><a>CC Debugger driver</a></li>
+			<li><a>Bluegiga SDK</a></li>
+			<li><a>Windows environment</a></li>
+			<li><a>Pallette Debug App</a></li>
+		      </ul>
+		    </td>
+		    
+		  </tr>
+		</table>
+		
 
-				<!-- END #blog-timeline -->
+		<h5>Physical</h5>
+		<p>List of materials:</p>
+		<ul>
+		  <li>Mouth guard</li>
+		  <li>Heat shrink </li>
+		  <li>Thread & needle</li>
+		</ul>
+		<p class="notice success"><strong>Tip:</strong> ...</p>
+		<br />
+		
+		
+		<h5>Electronics</h5>
+		<p>You will need:
+		  <ul>
+		    <li><a>Electronics design files</a></li>
+		    <li>Zinc air batteries</li>
+		    <li>Ribbon cable 6 conductors 0.05 inch pitch</li>
+		    <li>Soldering iron</li>
+		    <li>Solder wire</li>
+		    <li>Wire stripper</li>
+		    <li>Wire cutter</li>
+		  </ul>
+		</p>
+		<p>If you want to do reflow soldering youself, you will need
+		  <ul>
+		    <li>Electronic hot plate preheating station or hot air soldering rework station</li>
+		    <li>Solder paste</li>
+		    <li>Solder wick</li>
+		    <li>Flux</li>
+		    <li>Tweezers</li>
+		    <li>Components listed on the BOM</li>
+		  </ul>
+		</p>
+		
+		<p>The schematics and the PCB are designed using Altium &reg; Designer, a professional PCB design software for the Microsoft Windows environment. However, you don't need to obtain a copy of Altium &reg; Designer if you don't wish to modify the design. </p>
+		
+		<p>All the design files, gerber files and docs are available on this <a>Github repo</a>. You can just send the <strong>Fabrication.zip</strong> on the repo to a PCB manufacturer to receive the Pallette PCBs. Here you can either use the specs list on the design files, or choose your own specs. If you were to use our specs, you will get white 0.014 inch thin 370HR boards with gold immersion finish and v-scores, which will be quite pricey (>$100 each for 10). </p>
+<img>
 
-			
-			<!-- Shown Blog Post ___-->
-			<div id="blog-post">
-				<article class="entry post">
-					<!-- Post meta ___-->
-					<div class="entry-meta">
-						<div class="entry-date">
-							<strong>24</strong> / May 2015
-						</div>
-						<div class="entry-category">
-							<a href="#" rel="category tag">Articles</a>	
-						</div>
-						<div class="entry-tags">
-					 		<a href="#" rel="tag">Photoshop</a> <a href="#" rel="tag">Tutorials</a> 			
-						</div>
-					</div>
-				
-					<div class="entry-content">
-						<!-- Heading ___-->
-						<h2>Materials</h2>
+<p>Or you can get them for $33 each with this <a>special deal</a>. However the boards will be 4x thicker (0.062 inch) with lead free solder finish, and you'll have to cut the boards yourself.</p>
+<img>
 
-						<!-- WYSIWYG content of post ___-->
-	  <p>We will need to prepare the following materials in order to build the Pallette device.</p>
+<p>After you have received the PCBs from the manufacturer, you can either purchase the components as listed on the Bill of Materials (BOM) in the repo and solder the components yourself, or send your blank PCBs and the <strong>Assembly.zip</strong> to a PCB assembler to receive assembled PCBs. The video below shows you how to reflow PCBs yourself.</p>
+<video></video>
+<p>Now your boards should look like this.</p>
+<img>
 
-					<br />
-
-					<h5>Physical</h5>
-					<p>List of materials:</p>
-					<ul>
-						<li>Mouth guard</li>
-						<li>Heat shrink </li>
-						<li>Thread & needle</li>
-					</ul>
-					<p class="notice success"><strong>Tip:</strong> ...</p>
-					<br />
-
-
-					<h5>Electronics</h5>
-					<p>You will need:
-						<ul>
-							<li><a>Electronics design files</a></li>
-							<li>Zinc air batteries</li>
-							<li>Ribbon cable 6 conductors 0.05" pitch</li>
-							<li>Soldering iron</li>
-							<li>Solder wire</li>
-							<li>Wire stripper</li>
-							<li>Wire cutter</li>
-						</ul>
-					</p>
-					<p>If you want to do reflow soldering youself, you will need
-						<ul>
-							<li>Electronic hot plate preheating station or hot air soldering rework station</li>
-							<li>Solder paste</li>
-							<li>Solder wick</li>
-							<li>Flux</li>
-							<li>Tweezers</li>
-							<li>Components listed on the BOM</li>
-						</ul>
-					</p>
-
-					<p>The schematics and the PCB are designed using Altium &reg; Designer, a professional PCB design software for the Microsoft Windows environment. However, you don't need to obtain a copy of Altium &reg; Designer if you don't wish to modify the design. </p>
-
-					<p>All the design files, gerber files and docs are available on this <a>Github repo</a>. You can just send the <strong>Fabrication.zip</strong> on the repo to a PCB manufacturer to receive the Pallette PCBs. Here you can either use the specs list on the design files, or choose your own specs. If you were to use our specs, you will get white 0.014" thin 370HR boards with gold immersion finish and v-scores, which will be quite pricey (>$100 each for 10). </p>
-					<img>
-
-					<p>Or you can get them for $33 each with this <a>special deal</a>. However the boards will be 4x thicker (0.062") with lead free solder finish, and you'll have to cut the boards yourself.</p>
-					<img>
-
-					<p>After you have received the PCBs from the manufacturer, you can either purchase the components as listed on the Bill of Materials (BOM) in the repo and solder the components yourself, or send your blank PCBs and the <strong>Assembly.zip</strong> to a PCB assembler to receive assembled PCBs. The video below shows you how to reflow PCBs yourself.</p>
-					<video></video>
-					<p>Now your boards should look like this.</p>
-					<img>
-					
-					<br />
-
-
-					<h5>Firmware</h5>
-					<p>You will need:
-						<ul>
-							<li><a>Firmware files</a></li>
-							<li><a>Programming cable</a></li>
-							<li><a>CC Debugger</a></li>
-							<li><a>CC Debugger driver</a></li>
-							<li><a>Bluegiga SDK</a></li>
-							<li><a>Windows environment</a></li>
-						</ul>
-					</p>
-
-					<p>The firmware runs on the Bluetooth enabled BLE113 microcontroller. The files are on this <a>Github repo</a>.</p>
-
-					<p>To program the microcontroller, you will need this cable.</p>
-
-					<img>
-					
-					<p>and CC Debugger</p>
-
-					<img>
-
-					<p>You will need to install the <a>CC Debugger driver</a>, and the <a>Bluegiga SDK</a> on the Windows environment.</p>
-
-
-					<br />
-
-					<h5>App</h5>
-					<p>You will need:
-					<ul>
-						<li>App design files</li>
-						<li>Android SDK</li>
-					</ul>
-				</p>
-					<p>The Android app is mainly for debugging purposes. The files are on this <a>Github repo</a>. </p>
-					<img>
-					<hr>
-					
-					<h3><strong>Checklist</strong></h3>
-					<p>To recap, here's the list of everything you need to get:</p>
-					<div class="colorful-content-box">
-						<p>
-							<input type="checkbox"><a>Electronics design files</a><br />
-							<input type="checkbox"><a>Zinc air batteries</a><br />
-							<input type="checkbox"><a>Ribbon cable 6 conductors 0.05 inch pitch</a><br />
-							<input type="checkbox"><a>Soldering iron</a><br />
-							<input type="checkbox"><a>Solder wire</a><br />
-							<input type="checkbox"><a>Wire stripper</a><br />
-							<input type="checkbox"><a>Wire cutter</a><br />
-							<input type="checkbox"><a>(Optional) Electronic hot plate/preheating station or hot air soldering rework station</a><br />
-							<input type="checkbox"><a>(Optional) Solder paste</a><br />
-							<input type="checkbox"><a>(Optional) Solder wick</a><br />
-							<input type="checkbox"><a>(Optional) Flux</a><br />
-							<input type="checkbox"><a>(Optional) Tweezers</a><br />
-							<input type="checkbox"><a>(Optional) Components listed on the BOM</a><br />
-							<input type="checkbox"><a>Firmware source files</a><br />
-							<input type="checkbox"><a>Programming cable</a><br />
-							<input type="checkbox"><a>CC Debugger</a><br />
-							<input type="checkbox"><a>CC Debugger driver</a><br />
-							<input type="checkbox"><a>Bluegiga SDK</a><br />
-							<input type="checkbox"><a>Windows environment</a><br />
-							<input type="checkbox"><a>App design files</a><br />
-							<input type="checkbox"><a>Android SDK</a><br />
-						</p>
-					</div>
-
-						<h3>Masonry Galleries</h3>
-						<p>Aenean lacinia bibendum nulla sed consectetur. Cras mattis consectetur purus sit amet fermentum. Donec id elit non mi porta gravida at eget metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Vestibulum id ligula porta felis euismod semper. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
-						<div class="gallery masonry-gallery no-margin">
-							<figure class="gallery-item">
-								<header class='gallery-icon'>
-									<a href="imgs/photography/landscape13-600x400.jpg" class="popup"><img src="imgs/photography/landscape13-600x400.jpg"alt="" /></a>
-								</header>	
-								<figcaption class='gallery-caption'>
-									<div class="entry-summary">
-										<h3>Caption of This Beauty</h3>
-										<p>Description of an image</p>
-									</div>
-								</figcaption>
-							</figure>
-				
-							<figure class="gallery-item">
-								<header class='gallery-icon popup'>
-									<a href="imgs/photography/landscape14-600x400.jpg" class="popup"><img src="imgs/photography/landscape14-600x400.jpg"alt="" /></a>
-								</header>
-								<figcaption class='gallery-caption'>
-									<div class="entry-summary">
-										<h3>Caption of This Beauty</h3>
-										<p>Description of an image</p>
-									</div>
-								</figcaption>
-							</figure>	
-
-							<figure class="gallery-item">
-								<header class='gallery-icon popup'>
-									<a href="imgs/photography/landscape15-600x400.jpg" class="popup"><img src="imgs/photography/landscape15-600x400.jpg"alt="" /></a>
-								</header>	
-								<figcaption class='gallery-caption'>
-									<div class="entry-summary">
-										<h3>Caption of This Beauty</h3>
-										<p>Description of an image</p>
-									</div>
-								</figcaption>
-							</figure>
-						
-							<figure class="gallery-item">
-								<header class='gallery-icon'>
-									<a href="imgs/photography/landscape11-600x400.jpg" class="popup"><img src="imgs/photography/landscape11-600x400.jpg"alt="" /></a>
-								</header>	
-								<figcaption class='gallery-caption'>
-									<div class="entry-summary">
-										<h3>Caption of This Beauty</h3>
-										<p>Description of an image</p>
-									</div>
-								</figcaption>
-							</figure>
-				
-							<figure class="gallery-item">
-								<header class='gallery-icon popup'>
-									<a href="imgs/photography/landscape12-600x400.jpg" class="popup"><img src="imgs/photography/landscape12-600x400.jpg"alt="" /></a>
-								</header>
-								<figcaption class='gallery-caption'>
-									<div class="entry-summary">
-										<h3>Caption of This Beauty</h3>
-										<p>Description of an image</p>
-									</div>
-								</figcaption>
-							</figure>	
-
-							<figure class="gallery-item">
-								<header class='gallery-icon popup'>
-									<a href="imgs/photography/landscape09-600x400.jpg" class="popup"><img src="imgs/photography/landscape09-600x400.jpg"alt="" /></a>
-								</header>	
-								<figcaption class='gallery-caption'>
-									<div class="entry-summary">
-										<h3>Caption of This Beauty</h3>
-										<p>Description of an image</p>
-									</div>
-								</figcaption>
-							</figure>
-						</div>
-						<!-- END of gallery -->
-					</div>
-					<!-- END of WYSIWYG content__-->
-				</article>
-			</div><!-- END #blog-post -->
-		</div><!-- END .wrapper -->
-	</section>
+<br />
 
 
-	<footer id="footer" role="contentinfo">
-		<p class="back-to-top"><a href="#header">Back to top ↑</a></p>
-		<p class="copyright">Pallette &copy; 2016</p>
-		<ul class="social-icons">
-			<li><a href="#" target="_blank" title="Email"><i class="icon-email"></i></a></li>
-			<li><a href="#" target="_blank" title="Twitter"><i class="icon-twitter"></i></a></li>
-			<li><a href="#" target="_blank" title="Vimeo"><i class="icon-vimeo"></i></a></li>
-			<li><a href="#" target="_blank" title="Ello"><i class="icon-ello"></i></a></li>
-			<li><a href="#" target="_blank" title="Github"><i class="icon-github"></i></a></li>						
-		</ul>	
-	</footer>
+<h5>Firmware</h5>
+<p>You will need:
+  <ul>
+    <li><a>Firmware files</a></li>
+    <li><a>Programming cable</a></li>
+    <li><a>CC Debugger</a></li>
+    <li><a>CC Debugger driver</a></li>
+    <li><a>Bluegiga SDK</a></li>
+    <li><a>Windows environment</a></li>
+  </ul>
+</p>
 
-	<!-- Javascripts ______________________________________-->
-	<script src="js/jquery.min.js"></script> 
-	<script src="js/retina.min.js"></script>  
-	<script src="js/imagesloaded.pkgd.min.js"></script> 
-	<script src="js/jquery.lazyloadxt.min.js"></script> 
-	<!-- include Masonry -->
-	<script src="js/isotope.pkgd.min.js"></script> 
-	<!-- include image popups -->
-	<script src="js/jquery.magnific-popup.min.js"></script> 
-	<!-- include svg line drawing plugin -->
-	<script src="js/jquery.lazylinepainter.min.js"></script>
-	<!-- include custom script -->
-	<script src="js/scripts.js"></script>
+<p>The firmware runs on the Bluetooth enabled BLE113 microcontroller. The files are on this <a>Github repo</a>.</p>
 
-	</body>
+<p>To program the microcontroller, you will need this cable.</p>
+
+<img>
+
+<p>and CC Debugger</p>
+
+<img>
+
+<p>You will need to install the <a>CC Debugger driver</a>, and the <a>Bluegiga SDK</a> on the Windows environment.</p>
+
+
+<br />
+
+<h5>App</h5>
+<p>You will need:
+  <ul>
+    <li>App design files</li>
+    <li>Android SDK</li>
+  </ul>
+</p>
+<p>The Android app is mainly for debugging purposes. The files are on this <a>Github repo</a>. </p>
+<img>
+<hr>
+
+<h3><strong>Checklist</strong></h3>
+<p>To recap, here's the list of everything you need to get:</p>
+<div class="colorful-content-box">
+  <p>
+    <input type="checkbox"><a>Electronics design files</a><br />
+    <input type="checkbox"><a>Zinc air batteries</a><br />
+    <input type="checkbox"><a>Ribbon cable 6 conductors 0.05 inch pitch</a><br />
+    <input type="checkbox"><a>Soldering iron</a><br />
+    <input type="checkbox"><a>Solder wire</a><br />
+    <input type="checkbox"><a>Wire stripper</a><br />
+    <input type="checkbox"><a>Wire cutter</a><br />
+    <input type="checkbox"><a>(Optional) Electronic hot plate/preheating station or hot air soldering rework station</a><br />
+    <input type="checkbox"><a>(Optional) Solder paste</a><br />
+    <input type="checkbox"><a>(Optional) Solder wick</a><br />
+    <input type="checkbox"><a>(Optional) Flux</a><br />
+    <input type="checkbox"><a>(Optional) Tweezers</a><br />
+    <input type="checkbox"><a>(Optional) Components listed on the BOM</a><br />
+    <input type="checkbox"><a>Firmware source files</a><br />
+    <input type="checkbox"><a>Programming cable</a><br />
+    <input type="checkbox"><a>CC Debugger</a><br />
+    <input type="checkbox"><a>CC Debugger driver</a><br />
+    <input type="checkbox"><a>Bluegiga SDK</a><br />
+    <input type="checkbox"><a>Windows environment</a><br />
+    <input type="checkbox"><a>App design files</a><br />
+    <input type="checkbox"><a>Android SDK</a><br />
+  </p>
+</div>
+
+<h3>Masonry Galleries</h3>
+<p>Aenean lacinia bibendum nulla sed consectetur. Cras mattis consectetur purus sit amet fermentum. Donec id elit non mi porta gravida at eget metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed odio dui. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Vestibulum id ligula porta felis euismod semper. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
+<div class="gallery masonry-gallery no-margin">
+  <figure class="gallery-item">
+    <header class='gallery-icon'>
+      <a href="imgs/photography/landscape13-600x400.jpg" class="popup"><img src="imgs/photography/landscape13-600x400.jpg"alt="" /></a>
+    </header>	
+    <figcaption class='gallery-caption'>
+      <div class="entry-summary">
+	<h3>Caption of This Beauty</h3>
+	<p>Description of an image</p>
+      </div>
+    </figcaption>
+  </figure>
+  
+  <figure class="gallery-item">
+    <header class='gallery-icon popup'>
+      <a href="imgs/photography/landscape14-600x400.jpg" class="popup"><img src="imgs/photography/landscape14-600x400.jpg"alt="" /></a>
+    </header>
+    <figcaption class='gallery-caption'>
+      <div class="entry-summary">
+	<h3>Caption of This Beauty</h3>
+	<p>Description of an image</p>
+      </div>
+    </figcaption>
+  </figure>	
+  
+  <figure class="gallery-item">
+    <header class='gallery-icon popup'>
+      <a href="imgs/photography/landscape15-600x400.jpg" class="popup"><img src="imgs/photography/landscape15-600x400.jpg"alt="" /></a>
+    </header>	
+    <figcaption class='gallery-caption'>
+      <div class="entry-summary">
+	<h3>Caption of This Beauty</h3>
+	<p>Description of an image</p>
+      </div>
+    </figcaption>
+  </figure>
+  
+  <figure class="gallery-item">
+    <header class='gallery-icon'>
+      <a href="imgs/photography/landscape11-600x400.jpg" class="popup"><img src="imgs/photography/landscape11-600x400.jpg"alt="" /></a>
+    </header>	
+    <figcaption class='gallery-caption'>
+      <div class="entry-summary">
+	<h3>Caption of This Beauty</h3>
+	<p>Description of an image</p>
+      </div>
+    </figcaption>
+  </figure>
+  
+  <figure class="gallery-item">
+    <header class='gallery-icon popup'>
+      <a href="imgs/photography/landscape12-600x400.jpg" class="popup"><img src="imgs/photography/landscape12-600x400.jpg"alt="" /></a>
+    </header>
+    <figcaption class='gallery-caption'>
+      <div class="entry-summary">
+	<h3>Caption of This Beauty</h3>
+	<p>Description of an image</p>
+      </div>
+    </figcaption>
+  </figure>	
+  
+  <figure class="gallery-item">
+    <header class='gallery-icon popup'>
+      <a href="imgs/photography/landscape09-600x400.jpg" class="popup"><img src="imgs/photography/landscape09-600x400.jpg"alt="" /></a>
+    </header>	
+    <figcaption class='gallery-caption'>
+      <div class="entry-summary">
+	<h3>Caption of This Beauty</h3>
+	<p>Description of an image</p>
+      </div>
+    </figcaption>
+  </figure>
+</div>
+<!-- END of gallery -->
+</div>
+<!-- END of WYSIWYG content__-->
+</article>
+</div><!-- END #blog-post -->
+</div><!-- END .wrapper -->
+</section>
+
+
+<footer id="footer" role="contentinfo">
+  <p class="back-to-top"><a href="#header">Back to top ↑</a></p>
+  <p class="copyright">Pallette &copy; 2016</p>
+  <ul class="social-icons">
+    <li><a href="#" target="_blank" title="Email"><i class="icon-email"></i></a></li>
+    <li><a href="#" target="_blank" title="Twitter"><i class="icon-twitter"></i></a></li>
+    <li><a href="#" target="_blank" title="Vimeo"><i class="icon-vimeo"></i></a></li>
+    <li><a href="#" target="_blank" title="Ello"><i class="icon-ello"></i></a></li>
+    <li><a href="#" target="_blank" title="Github"><i class="icon-github"></i></a></li>						
+  </ul>	
+</footer>
+
+<!-- Javascripts ______________________________________-->
+<script src="js/jquery.min.js"></script> 
+<script src="js/retina.min.js"></script>  
+<script src="js/imagesloaded.pkgd.min.js"></script> 
+<script src="js/jquery.lazyloadxt.min.js"></script> 
+<!-- include Masonry -->
+<script src="js/isotope.pkgd.min.js"></script> 
+<!-- include image popups -->
+<script src="js/jquery.magnific-popup.min.js"></script> 
+<!-- include svg line drawing plugin -->
+<script src="js/jquery.lazylinepainter.min.js"></script>
+<!-- include custom script -->
+<script src="js/scripts.js"></script>
+
+</body>
 </html>
