@@ -946,7 +946,7 @@ article h2 {
 }
 
 .entry-summary > p:first-child {
-  font-family: Times, serif;
+  font-family: Packenham, serif; /* formerly Times */
   font-style: italic;
   font-size: .9em;
   opacity: .8;
