@@ -55,11 +55,40 @@ table {
   src: url(css/fonts/Politica_Italic.ttf);
 }
 
+@font-face {
+  font-family: KiloGram;
+  src: url(css/fonts/KiloGram_KG.otf);
+}
+@font-face{
+    font-family: MuseoSLAB;
+    src: url(css/fonts/Museo_Slab_500_2-webfont.ttf);
+}
+
+@font-face{
+    font-family: MuseoSANS;
+    src: url(css/fonts/MuseoSans_500-webfont.ttf);
+}
+
+@font-face{
+    font-family: Packenham;
+    src: url(css/fonts/pakenham_rg.ttf);
+}
+
+@font-face{
+    font-family: Steelfish;
+    src: url(css/fonts/steelfish_rg.ttf);
+}
+
+@font-face{
+    font-family: Gnuolane;
+    src: url(css/fonts/gnuolane_rg.ttf);
+}
+
 /* WYSIWYG TEXT STYLES
 --------------------------------------------------------- */
 html {
-  font-family: Politica, sans-serif;
-  font-size: 62.5%;
+  font-family: 'Politica', sans-serif;
+  /*font-size: 62.5%;*/
 }
 
 /*body {
@@ -73,6 +102,29 @@ body {
   font-size: 1.8em;
   font-weight: 400;
 }
+
+
+/* EDITS */
+p {
+    font-family: 'Gnuolane', sans-serif;
+    /*font-family: 'Packenham', sans-serif;*/
+    /*font-family: 'Josefin Sans', sans-serif;*/
+    color: #ffc4dc;
+    font-size: 1.00em;
+    font-weight: 5;
+}
+
+ul {
+    font-family: 'Gnuolane', sans-serif;
+    /*font-family: 'Josefin Sans', sans-serif;*/
+    /*font-family: 'Packenham', sans-serif;*/
+    font-size: 1.00em;
+    font-weight: 5;
+    color: #ffc4dc;
+}
+
+
+/* EDITS */
 
 .button {
   display: inline-block;
@@ -110,11 +162,12 @@ h1 {
 }
 
 h2 {
-  font-weight: normal;
-  font-size: 1.5em;
-  margin: 0 0 .7em 0;
-  line-height: 1.2;
-  letter-spacing: .01em;
+    /*font-weight: normal;*/
+    font-weight: bold;
+    font-size: 1.5em;
+    margin: 0 0 .7em 0;
+    line-height: 1.2;
+    letter-spacing: .01em;
 }
 
 h3 {
