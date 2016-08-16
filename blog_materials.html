@@ -1,6 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+
+
+  <style>
+
+
+
+    input[type=checkbox]:checked ~ div {
+    background: red;
+    }
+    
+  </style>
+
+
+  <head>
 	<meta charset="utf-8">
 	
 	<link rel="Shortcut Icon" type="image/ico" href="imgs/favicon.ico" />
@@ -287,8 +300,10 @@
 		<!--p>We will need to prepare the following materials in order to build the Pallette device.</p-->
 		
 		<br/>
-		
-		<table>
+
+
+		<h2>Checklist</h2>
+		<table style="background-color: crimson">
 		  <th style="font-weight:bold"> Physical </th>
 		  <th style="font-weight:bold"> Electronics </th>
 		  <th style="font-weight:bold"> Programming </th>
@@ -330,9 +345,24 @@
 		    
 		  </tr>
 		</table>
+
+		<!--p class="notice "><strong>Tip:
+		    If you want to do reflow soldering youself, you will need <br>
+		    <input type="checkbox"><a>Firmware files</a></input><br>
+			<input type="checkbox"><a>Programming cable</a></input><br>
+		    <ul>
+		      <li>Electronic hot plate preheating station or hot air soldering rework station</li>
+		      <li>Solder paste</li>
+		      <li>Solder wick</li>
+		      <li>Flux</li>
+		      <li>Tweezers</li>
+		      <li>Components listed on the BOM</li>
+		    </ul>
+		  </strong>
+</p-->
 		
 
-		<h5>Physical</h5>
+		<!--h5>Physical</h5>
 		<p>List of materials:</p>
 		<ul>
 		  <li>Mouth guard</li>
@@ -364,7 +394,7 @@
 		    <li>Tweezers</li>
 		    <li>Components listed on the BOM</li>
 		  </ul>
-		</p>
+		</p>-->
 		
 		<p>The schematics and the PCB are designed using Altium &reg; Designer, a professional PCB design software for the Microsoft Windows environment. However, you don't need to obtain a copy of Altium &reg; Designer if you don't wish to modify the design. </p>
 		
