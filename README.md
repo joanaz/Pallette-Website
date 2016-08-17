@@ -1,5 +1,10 @@
 # Pallette-Website
 
+## To view the site
+* clone the repository locally by doing `git clone https://github.com/joanaz/Pallette-Website.git`
+* `cd Pallette-Website/`
+* launch a local web server, e.g. `python -m SimpleHTTPServer &`
+* point your browser to localhost:8000
 
 ## License
 
