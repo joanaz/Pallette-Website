@@ -59,35 +59,37 @@ table {
   font-family: KiloGram;
   src: url(css/fonts/KiloGram_KG.otf);
 }
-@font-face{
-    font-family: MuseoSLAB;
-    src: url(css/fonts/Museo_Slab_500_2-webfont.ttf);
+
+@font-face {
+  font-family: MuseoSLAB;
+  src: url(css/fonts/Museo_Slab_500_2-webfont.ttf);
 }
 
-@font-face{
-    font-family: MuseoSANS;
-    src: url(css/fonts/MuseoSans_500-webfont.ttf);
+@font-face {
+  font-family: MuseoSANS;
+  src: url(css/fonts/MuseoSans_500-webfont.ttf);
 }
 
-@font-face{
-    font-family: Packenham;
-    src: url(css/fonts/pakenham_rg.ttf);
+@font-face {
+  font-family: Packenham;
+  src: url(css/fonts/pakenham_rg.ttf);
 }
 
-@font-face{
-    font-family: Steelfish;
-    src: url(css/fonts/steelfish_rg.ttf);
+@font-face {
+  font-family: Steelfish;
+  src: url(css/fonts/steelfish_rg.ttf);
 }
 
-@font-face{
-    font-family: Gnuolane;
-    src: url(css/fonts/gnuolane_rg.ttf);
+@font-face {
+  font-family: Gnuolane;
+  src: url(css/fonts/gnuolane_rg.ttf);
 }
 
 /* WYSIWYG TEXT STYLES
 --------------------------------------------------------- */
 html {
   font-family: 'Politica', sans-serif;
+
   /*font-size: 62.5%;*/
 }
 
@@ -98,29 +100,43 @@ html {
 }*/
 
 body {
-  font-family:'Politica', sans-serif;
+  font-family: 'Politica', sans-serif;
   font-size: 1.8em;
   font-weight: 400;
 }
 
-
 /* EDITS */
 p {
-    font-family: 'Gnuolane', sans-serif;
-    /*font-family: 'Packenham', sans-serif;*/
-    /*font-family: 'Josefin Sans', sans-serif;*/
-    color: #ffc4dc;
-    font-size: 1.00em;
-    font-weight: 5;
+  font-family: 'Gnuolane', sans-serif;
+
+  /*font-family: 'Packenham', sans-serif;*/
+  /*font-family: 'Josefin Sans', sans-serif;*/
+  color: black;
+
+  //white;
+
+  //#ffc4dc;
+  font-size: 1.00em;
+  font-weight: 5;
+}
+
+#about p {
+  color: grey;
+}
+
+#contact p {
+  color: white;
 }
 
 ul {
-    font-family: 'Gnuolane', sans-serif;
-    /*font-family: 'Josefin Sans', sans-serif;*/
-    /*font-family: 'Packenham', sans-serif;*/
-    font-size: 1.00em;
-    font-weight: 5;
-    color: #ffc4dc;
+  font-family: 'Gnuolane', sans-serif;
+
+  /*font-family: 'Josefin Sans', sans-serif;*/
+  /*font-family: 'Packenham', sans-serif;*/
+  font-size: 1.00em;
+  font-weight: 5;
+
+  /*color: #ffc4dc;*/
 }
 
 /* EDITS */
@@ -161,12 +177,12 @@ h1 {
 }
 
 h2 {
-    /*font-weight: normal;*/
-    font-weight: bold;
-    font-size: 1.5em;
-    margin: 0 0 .7em 0;
-    line-height: 1.2;
-    letter-spacing: .01em;
+  /*font-weight: normal;*/
+  font-weight: bold;
+  font-size: 1.5em;
+  margin: 0 0 .7em 0;
+  line-height: 1.2;
+  letter-spacing: .01em;
 }
 
 h3 {
@@ -181,6 +197,7 @@ h4 {
   font-size: 1.15em;
   margin: 0 0 .5em 0;
   line-height: 1.4;
+  color: hotpink;
 }
 
 h5 {
@@ -446,13 +463,16 @@ hr.divider {
   width: 100%;
   position: relative;
   background: #222;
-  margin: 0 0 1em 0;
+  margin: 0 0 4em 0;
 }
 
-.image-with-caption img {
+.image-with-caption .picture {
   width: 100%;
-  height: auto;
-  margin: 0 0 -5px 0;
+  height: 0;
+  padding-top: 150%;
+  margin: 0;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
   -webkit-transition: all .2s ease;
   -moz-transition: all .2s ease;
   -ms-transition: all .2s ease;
@@ -480,8 +500,49 @@ hr.divider {
   bottom: 0;
 }
 
-.image-with-caption:hover img {
-  opacity: .3;
+.image-with-caption #Dan {
+  background-image: url("imgs/photography/dan.jpg");
+}
+
+.image-with-caption:hover #Dan {
+  background-image: url("imgs/photography/dan2.jpg");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("imgs/photography/dan2.jpg");
+}
+
+.image-with-caption #Joanna {
+  background-image: url("imgs/photography/joanna.jpg");
+}
+
+.image-with-caption:hover #Joanna {
+  background-image: url("imgs/photography/joanna2.jpg");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("imgs/photography/joanna2.jpg");
+}
+
+.image-with-caption #Oliver {
+  background-image: url("imgs/photography/oliver.jpg");
+}
+
+.image-with-caption:hover #Oliver {
+  background-image: url("imgs/photography/oliver2.jpg");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("imgs/photography/oliver2.jpg");
+}
+
+.image-with-caption #Rohit {
+  background-image: url("imgs/photography/rohit.jpg");
+}
+
+.image-with-caption:hover #Rohit {
+  background-image: url("imgs/photography/rohit2.jpg");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("imgs/photography/rohit2.jpg");
+}
+
+.image-with-caption #Shawn {
+  background-image: url("imgs/photography/shawn.jpg");
+}
+
+.image-with-caption:hover #Shawn {
+  background-image: url("imgs/photography/shawn2.jpg");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("imgs/photography/shawn2.jpg");
 }
 
 .image-with-caption p:first-of-type {
