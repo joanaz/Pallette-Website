@@ -41,21 +41,6 @@ table {
 }
 
 @font-face {
-  font-family: Politica;
-  src: url(css/fonts/Politica.ttf);
-}
-
-@font-face {
-  font-family: Politica-Bold;
-  src: url(css/fonts/Politica_Bold.ttf);
-}
-
-@font-face {
-  font-family: Politica-Italic;
-  src: url(css/fonts/Politica_Italic.ttf);
-}
-
-@font-face {
   font-family: KiloGram;
   src: url(css/fonts/KiloGram_KG.otf);
 }
@@ -85,29 +70,73 @@ table {
   src: url(css/fonts/gnuolane_rg.ttf);
 }
 
+/** Ultra Light */
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 100;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-ultralight-webfont.woff");
+}
+
+/** Thin */
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 200;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-thin-webfont.woff");
+}
+
+/** Regular */
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 400;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+}
+
+/** Medium */
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 500;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-medium-webfont.woff");
+}
+
+/** Semi Bold */
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 600;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-semibold-webfont.woff");
+}
+
+/** Bold */
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 700;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-bold-webfont.woff");
+}
+
+/** Regular */
+@font-face {
+  font-family: "San Francisco Text";
+  font-weight: 400;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscotext-regular-webfont.woff");
+}
+
 /* WYSIWYG TEXT STYLES
 --------------------------------------------------------- */
 html {
-  font-family: 'Politica', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 
   /*font-size: 62.5%;*/
 }
 
-/*body {
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 1.8em;
-  font-weight: 400;
-}*/
-
 body {
-  font-family: 'Politica', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 1.8em;
   font-weight: 400;
+  background: white;
 }
 
 /* EDITS */
 p {
-  font-family: 'Gnuolane', sans-serif;
+  /*font-family: 'Gnuolane', sans-serif;*/
 
   /*font-family: 'Packenham', sans-serif;*/
   /*font-family: 'Josefin Sans', sans-serif;*/
@@ -120,16 +149,57 @@ p {
   font-weight: 5;
 }
 
+#home {
+  bottom: 0;
+  top: 40%;
+  width: 90%;
+}
+
+#home h1 {
+  font-size: 4em;
+  font-weight: 200;
+  line-height: 1.1;
+  color: #f23081;
+}
+
+#about {
+  font-family: 'San Francisco', 'Open Sans', sans-serif;
+}
+
+#about h1 {
+  font-size: 3em;
+  font-weight: 200;
+  color: #f23081;
+}
+
 #about p {
-  color: grey;
+  font-weight: 400;
+  mix-blend-mode: multiply;
+  font-size: 1.2em;
+  line-height: 1.4;
+  color: rgba(0, 0, 0, 0.3);
 }
 
 #contact p {
   color: white;
 }
 
+.centerimage {
+  margin: auto;
+  display: block;
+  object-fit: contain;
+}
+
+.image-fit {
+  object-fit: contain;
+}
+
+.padding-left {
+  padding-left: 1em;
+}
+
 ul {
-  font-family: 'Gnuolane', sans-serif;
+  /*font-family: 'Gnuolane', sans-serif;*/
 
   /*font-family: 'Josefin Sans', sans-serif;*/
   /*font-family: 'Packenham', sans-serif;*/
@@ -197,7 +267,7 @@ h4 {
   font-size: 1.15em;
   margin: 0 0 .5em 0;
   line-height: 1.4;
-  color: hotpink;
+  color: #f23081;
 }
 
 h5 {
@@ -242,7 +312,11 @@ em {
 }
 
 a {
-  color: #BAEEFE;
+  color: #f23081;
+
+  //dodgerblue;
+
+  //#BAEEFE;
 
   //#EA8E00;
   text-decoration: none;
@@ -268,6 +342,12 @@ img {
   margin-bottom: 2em;
   max-width: 100%;
   height: auto;
+}
+
+img.instruction {
+  width: 80%;
+  margin: 0 auto;
+  display: block;
 }
 
 p img, h2 img {
@@ -320,12 +400,15 @@ pre, code {
 }
 
 hr {
+  border: solid 2px #eeeeee;
   clear: both;
-  background: #EA8E00;
+
+  /*background: #EA8E00;*/
   height: 2px;
-  width: 80px;
-  border: 0;
-  margin: 0 0 1em 0;
+
+  /*width: 80px;*/
+  /*border: 0;*/
+  margin: 5em 0;
 }
 
 hr.aligncenter, .aligncenter hr {
@@ -373,9 +456,9 @@ ul.aligncenter, .aligncenter ul, ol.aligncenter, .aligncenter ol {
 }
 
 .big, big {
-  font-size: 1.15em;
+  font-size: 10em;
+  font-weight: 200;
   line-height: 1.5;
-  font-weight: 300;
 }
 
 h2.big {
@@ -454,8 +537,10 @@ h6 .small, h6 .big, .small h6, .big h6 {
 hr.divider {
   background: none;
   border: 0;
-  padding: 1.5em 0;
-  margin: 0;
+
+  /*padding: 1.5em 0;*/
+
+  margin-top: 0;
   clear: both;
 }
 
@@ -546,7 +631,7 @@ hr.divider {
 }
 
 .image-with-caption p:first-of-type {
-  font-family: Times, serif;
+  /*font-family: Times, serif;*/
   font-style: italic;
   font-size: .9em;
   opacity: .8;
@@ -625,6 +710,19 @@ table p.table-top {
   margin-bottom: 1em;
   font-weight: bold;
   letter-spacing: .05em;
+}
+
+.material th {
+  font-weight: bold;
+}
+
+.material td {
+  text-align: left;
+  vertical-align: top;
+}
+
+.material label {
+  font-weight: bold;
 }
 
 .button.grey {
@@ -943,9 +1041,15 @@ cite {
 }
 
 .colorful-content-box {
-  background: #BAEEFE;
-  color: #F7F6F5;
+  background: #f23081;
+
+  //#BAEEFE;
+  color: white;
+
+  //#F7F6F5;
   padding: 1em 2em;
+  border-radius: 1em;
+  margin: 2em;
 }
 
 .colorful-content-box a {
@@ -955,6 +1059,7 @@ cite {
 
 .colorful-content-box p {
   padding: .9em 0;
+  color: white;
 }
 
 .colorful-content-box a.button {

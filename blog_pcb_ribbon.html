@@ -35,16 +35,10 @@
 			<div class="wrapper">
 				
 				<!-- Logo __-->
-				<!-- <h1 id="logo"> -->
-				<!--a href="index.html" rel="home" id="logo-svg-animated">
-				<img src="imgs/logo-white.png" alt="logo">
-				<img src="imgs/logo-tongue.png" alt="logo"-->
-				<!--/a-->
-				<!-- </h1> -->
-				
 				<a href="index.html" rel="home">
-					<img src="imgs/logo-pallette.png" alt="logo">
-				</a>
+									<img class="image-fit" src="imgs/logo-pallette.png" alt="logo">
+									<img class="image-fit padding-left" src="imgs/pallette@2x.png" alt="logo">
+								</a>
 				
 				<!-- Main menu __-->
 				<nav id="mainmenu" role="navigation">
@@ -270,26 +264,112 @@
 								<h1>PCB Ribbon</h1>
 								
 								<!-- WYSIWYG content of post ___-->
+
+								<p>Materials used in this step:
+									<ul>
+										<li>Assembled PCBs</li>
+										<li>Ribbon cable</li>
+										<li>2x Zinc air batteries</li>
+										<li>Soldering iron</li>
+										<li>Solder wire</li>
+										<li>Wire cutter</li>
+										<li>Multimeter</li>
+										<li>CC Debugger</li>
+										<li>Programming cable</li>
+									</ul>
+								</p>
+								
+										<p>Now you should have boards look like this:</p>
+										<ol><li>The Battery Board
+										<p><img class="alignnone instruction" src="imgs/photography/pcbs/DSC06659.jpg" alt="" /></p>
+										</li>
+										<li>The Voltage Regulator Board
+										<p><img class="alignnone instruction" src="imgs/photography/pcbs/DSC06657.jpg" alt="" /></p>
+									</li>
+									<li>The Sensor Board
+										<p><img class="alignnone instruction" src="imgs/photography/pcbs/DSC06683.jpg" alt="" /></p>
+									</li>
+									<li>The Microcontroller Board
+										<p><img class="alignnone instruction" src="imgs/photography/pcbs/DSC06684.jpg" alt="" /></p>
+									</li>
+								</ol>
+								<div class="colorful-content-box">
+										<p>Or alternatively this (photo features older design):</p>
+										<p><img class="alignnone instruction" src="imgs/photography/pcbs/DSC06667.jpg" alt="" /></p>
+									</div>
+									<h4>Trim the legs</h4>
+										<p>You need to trim the legs of the connectors with a cutter.</p>
+										
+										<p><img class="alignnone instruction" src="imgs/photography/pcbs/DSC06662.jpg" alt="" /></p>
+										<p><img class="alignnone instruction" src="imgs/photography/pcbs/DSC06663.jpg" alt="" /></p>
+										<p><img class="alignnone instruction" src="imgs/photography/pcbs/DSC06658.jpg" alt="" /></p>
+										<p><img class="alignnone instruction" src="imgs/photography/pcbs/DSC06665.jpg" alt="" /></p>
+										
+										<br />
+										<p>Now we have the little PCBs with components soldered on them, we need to connect them together to make a complete circuitry. However, before we do that, it's better to test each board to make sure that there are no soldering mistakes.</p>
+											
+											<h4>Test the Battery Board</h4>
+											<p>You need 2x batteries and a multimeter.</p>
+											<p><img class="alignnone instruction" src="imgs/photography/pcbs/DSC06690.jpg" alt="" /></p>
+											<p>Stack two batteries and tape their side together.</p>
+											<p><img class="alignnone instruction" src="imgs/photography/pcbs/DSC06688.jpg" alt="" /></p>
+											<p>Push the batteries inside the battery holder, positive side (flat side) up.</p>
+											<p><img class="alignnone instruction" src="imgs/photography/pcbs/DSC06701.jpg" alt="" /></p>
+											<p>If the batteries are too loose in the battery holder, add a bit of solder to the central round pad of the battery holder footprint.</p>
+											<p><img class="alignnone instruction" src="imgs/photography/pcbs/DSC06695.jpg" alt="" /></p>
+											<p>Turn on the switch by flipping the lever up, and measure the voltage across the 2 pin header, the reading should be around 3.1V.</p>
+											<p><img class="alignnone instruction" src="imgs/photography/pcbs/DSC06707.jpg" alt="" /></p>
+											
+											<h4>Test the Voltage Regulator Board</h4>
+											<p>Plug in the battery board to the voltage regulator board, and turn it on.</p>
+											<p><img class="alignnone instruction" src="imgs/photography/pcbs/DSC06711.jpg" alt="" /></p>
+											<p>Measure the output voltage from the regulator using the pads at the back of the board. The multimeter should read 2.2V.</p>
+											<p><img class="alignnone instruction" src="imgs/photography/pcbs/DSC06716.jpg" alt="" /></p>
+											<p><img class="alignnone instruction" src="imgs/photography/pcbs/DSC06714.jpg" alt="" /></p>
+											
+											<p>To test the Sensor Board and the Microcontroller Board, we need to connect them with ribbon cables. The next section shows you how.</p>
+											
+
+
 								<p>
 									With the clay imprint and the prepared PCB's, we're ready to craft the heart of Pallette - the sensor ribbon. You'll align the boards against the clay imprint, measure lengths and angles for ribbon cables, and solder everything together.
 								</p>
-								<p> (video) </p>
-								<h5>Connecting boards</h5>
-								<p>We will use a 6 conductor 0.05" pitch ribbon cable to connect them, by soldering the conductors on the pads at the back of the PCBs. Please watch the video below to see how it’s done.</p>
+								<h4>Connecting boards</h4>
+								<p><img class="alignnone instruction" src="imgs/photography/ribbon/DSC06742.jpg" alt="" /></p>
+								<p>Tape boards at desired locations</p>
+								<p><img class="alignnone instruction" src="imgs/photography/ribbon/DSC06744.jpg" alt="" /></p>
+
+							
+								<p>We will use 0.05" pitch ribbon cables to connect them. Cut two 5cm 2-conductor ribbon cables and a 5cm 6-conductor ribbon cable.</p>
+								<p><img class="alignnone instruction" src="imgs/photography/ribbon/DSC06747.jpg" alt="" /></p>
+								<p>Strip the ends of the ribbon cables.</p>
+								<p><img class="alignnone instruction" src="imgs/photography/ribbon/DSC06748.jpg" alt="" /></p>
+								<p>Tint the ends with solder.</p>
+								<p><img class="alignnone instruction" src="imgs/photography/ribbon/DSC06749.jpg" alt="" /></p>
+								<p>Solder the conductors on the pads at the back of the Voltage Regulator Board and the Microcontroller Board, and tape them back on the clay imprint.</p>
+								<p><img class="alignnone instruction" src="imgs/photography/ribbon/DSC06754.jpg" alt="" /></p>
+								<p>Align the Sensor Board, and mark the board edge with a pen.</p>
+								<p><img class="alignnone instruction" src="imgs/photography/ribbon/DSC06758.jpg" alt="" /></p>
+								<p>Mark the lengths of the ribbon cables using the pads on the back on the Sensor Board.</p>
+								<p><img class="alignnone instruction" src="imgs/photography/ribbon/DSC06760.jpg" alt="" /></p>
+								<p><img class="alignnone instruction" src="imgs/photography/ribbon/DSC06761.jpg" alt="" /></p>
+								<p><img class="alignnone instruction" src="imgs/photography/ribbon/DSC06762.jpg" alt="" /></p>
+								<p><img class="alignnone instruction" src="imgs/photography/ribbon/DSC06763.jpg" alt="" /></p>
+								<p>Cut the ribbon cables to the desired lengths, strip the ends, and solder the conductors to the corresponding pads.</p>
+								<p><img class="alignnone instruction" src="imgs/photography/ribbon/DSC06769.jpg" alt="" /></p>
+								<p><img class="alignnone instruction" src="imgs/photography/ribbon/DSC06779.jpg" alt="" /></p>
+								<p>Now we have the assembled sensor band.</p>
+								<p><img class="alignnone instruction" src="imgs/photography/ribbon/DSC06792.jpg" alt="" /></p>
+
 								
-								<p>video
-								<video></video>
-							</p>
 							
-							<p>Here's what the final circuitry looks like</p>
 							
-							<p>image<img></p>
 							
-							<br />
 							
-							<h5>Testing the complete circuit</h5>
-							<p>We have to make sure there are no shorted wires or unconnected wires before we move on to the next section. </p>
-							<p><a href="#"><img class="alignnone size-full wp-image-86" src="imgs/photography/fullscreen09.jpg" alt="" /></a></p>
+							
+							
+							<p>We have to test the assembled sensor band to ensure that the circuit functions correctly before we seal it up. The next section explains how to use the firmware and the app to test the circuit. </p>
+							
 							
 						</div>
 						<!-- END of WYSIWYG content__-->

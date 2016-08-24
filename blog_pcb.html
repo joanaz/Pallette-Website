@@ -35,16 +35,10 @@
 			<div class="wrapper">
 				
 				<!-- Logo __-->
-				<!-- <h1 id="logo"> -->
-				<!--a href="index.html" rel="home" id="logo-svg-animated">
-				<img src="imgs/logo-white.png" alt="logo">
-				<img src="imgs/logo-tongue.png" alt="logo"-->
-				<!--/a-->
-				<!-- </h1> -->
-				
 				<a href="index.html" rel="home">
-					<img src="imgs/logo-pallette.png" alt="logo">
-				</a>
+									<img class="image-fit" src="imgs/logo-pallette.png" alt="logo">
+									<img class="image-fit padding-left" src="imgs/pallette@2x.png" alt="logo">
+								</a>
 				
 				<!-- Main menu __-->
 				<nav id="mainmenu" role="navigation">
@@ -139,7 +133,7 @@
 								</div>
 								<div class="entry-meta">
 									<div class="entry-date">
-										<strong>Step 2</strong> <!--/ May 2015 -->
+										<strong>Step 2</strong>
 									</div>
 								</div>
 								<h2>Imprint</h2>
@@ -159,7 +153,7 @@
 										<strong>Step 3</strong>
 									</div>
 								</div>
-								<h2>PCBs</h2>
+								<h2>(Optional) Reflow</h2>
 								<div class="entry-summary">
 									<p>Using Pallette PCB designs, solder boards.</p>
 								</div>
@@ -275,83 +269,121 @@
 								<p>Materials used in this step:
 									<ul>
 										<li>PCB design files</li>
-										<li>Zinc air batteries</li>
-										<li>Ribbon cable 6 conductors 0.05" pitch</li>
+										<li>2x Zinc air batteries</li>
 										<li>Soldering iron</li>
 										<li>Solder wire</li>
-										<li>Wire stripper</li>
 										<li>Wire cutter</li>
-										<li>Programming cable</li>
-										<li>Magnifying glass</li>
+										<li>Multimeter</li>
 									</ul>
 								</p>
-								<p>
+								<p>Optional materials for reflow soldering:
+									<ul>
+									<li>Hot plate</li>
+									<li>PCB components</li>
+									<li>Solder paste</li>
+									<li>Solder flux</li>
+									<li>Tweezers</li>
+									<li>Dremel</li>
+									</ul>
+								</p>
+								<!-- <p>
 								The schematics and the PCB are designed using Altium &reg; Designer, a professional PCB design software for the Microsoft Windows environment. However, you don't need to obtain a copy of Altium &reg; Designer if you don't wish to modify the design. </p>
 								
 								<p>All the design files, gerber files and docs are available on this <a>Github repo</a>. You can just send the <strong>Fabrication.zip</strong> on the repo to a PCB manufacturer to receive the Pallette PCBs. Here you can either use the specs list on the design files, or choose your own specs. If you were to use our specs, you will get white 0.014 inch thin 370HR boards with gold immersion finish and v-scores, which will be quite pricey (>$100 each for 10). </p>
 								<img>
-								<p>Or you can get them for $33 each with this <a>special deal</a>. However the boards will be 4x thicker (0.062 inch) with lead free solder finish, and you'll have to cut the boards yourself.</p>
-								<img>
+								<p><img class="alignnone instruction" src="imgs/photography/pcbs/DSC06584.jpg" alt="" /></p>
+								<p><img class="alignnone instruction" src="imgs/photography/pcbs/DSC06589.jpg" alt="" /></p>
+								<p>Or you can get them for $33 each with this <a>special deal</a>. However the boards will be 4x thicker (0.062 inch) with lead free solder finish, and you'll have to cut the boards yourself. (Photos below are from old design)</p>
+								<p><img class="alignnone instruction" src="imgs/photography/pcbs/DSC06576.jpg" alt="" /></p>
+								<p><img class="alignnone instruction" src="imgs/photography/pcbs/DSC06583.jpg" alt="" /></p>
+								<p><img class="alignnone instruction" src="imgs/photography/pcbs/DSC06595.jpg" alt="" /></p> -->
+								
 								<p>After you have received the PCBs from the manufacturer, you can either purchase the components as listed on the Bill of Materials (BOM) in the repo and solder the components yourself, or send your blank PCBs and the <strong>Assembly.zip</strong> to a PCB assembler to receive assembled PCBs. The video below shows you how to reflow PCBs yourself.</p>
 							<video></video> video
-							<p>Now your boards should look like this.</p>
-							<img>
+							<!-- <p>Now your boards should look like this:</p>
+							<ol><li>The Battery Board
+							<p><img class="alignnone instruction" src="imgs/photography/pcbs/DSC06659.jpg" alt="" /></p>
+							</li>
+							<li>The Voltage Regulator Board
+							<p><img class="alignnone instruction" src="imgs/photography/pcbs/DSC06657.jpg" alt="" /></p>
+						</li>
+						<li>The Sensor Board
+							<p><img class="alignnone instruction" src="imgs/photography/pcbs/DSC06683.jpg" alt="" /></p>
+						</li>
+						<li>The Microcontroller Board
+							<p><img class="alignnone instruction" src="imgs/photography/pcbs/DSC06684.jpg" alt="" /></p>
+						</li>
+					</ol>
+							<p>Or this:</p>
+							<p><img class="alignnone instruction" src="imgs/photography/pcbs/DSC06667.jpg" alt="" /></p>
+							<p>You need to trim the legs of the connectors with a cutter.</p>
+							
+							<p><img class="alignnone instruction" src="imgs/photography/pcbs/DSC06662.jpg" alt="" /></p>
+							<p><img class="alignnone instruction" src="imgs/photography/pcbs/DSC06663.jpg" alt="" /></p>
+							<p><img class="alignnone instruction" src="imgs/photography/pcbs/DSC06658.jpg" alt="" /></p>
+							<p><img class="alignnone instruction" src="imgs/photography/pcbs/DSC06665.jpg" alt="" /></p>
+							
 							<br />
-							<p>Now we have the little PCBs with components soldered on them, we need to connect them together to make a complete circuitry. However, before we do that, it's better to test each board to make sure that there are no soldering mistakes. First we visually inspect the boards, to check for any shorted solder joints or cold solder joints.</p>
-							<img>Image for shorted
-							<img>Image for cold
-							<p>If there are shorted solder joints, we will ...</p>
-						<video></video>video
-						<p>If there are cold solder joints, we will ...</p>
-					<video></video>video
-					<br />
-					<h5>Testing individual boards</h5>
-					<p>1. Battery board</p>
-					<p>2. Voltage regulator board
-					</p>
-					<p>3. Button board</p>
-					<p>4. Sensor board</p>
-					<p>5. Microcontroller board
-					</p>
-					<br />
+							<p>Now we have the little PCBs with components soldered on them, we need to connect them together to make a complete circuitry. However, before we do that, it's better to test each board to make sure that there are no soldering mistakes.</p>
+								
+								<h4>Test the Battery Board</h4>
+								<p>You need 2x batteries and a multimeter.</p>
+								<p><img class="alignnone instruction" src="imgs/photography/pcbs/DSC06690.jpg" alt="" /></p>
+								<p>Stack two batteries and tape their side together.</p>
+								<p><img class="alignnone instruction" src="imgs/photography/pcbs/DSC06688.jpg" alt="" /></p>
+								<p>Push the batteries inside the battery holder, positive side (flat side) up.</p>
+								<p><img class="alignnone instruction" src="imgs/photography/pcbs/DSC06701.jpg" alt="" /></p>
+								<p>If the batteries are too loose in the battery holder, add a bit of solder to the central round pad of the battery holder footprint.</p>
+								<p><img class="alignnone instruction" src="imgs/photography/pcbs/DSC06695.jpg" alt="" /></p>
+								<p>Turn on the switch by flipping the lever up, and measure the voltage across the 2 pin header, the reading should be around 3.1V.</p>
+								<p><img class="alignnone instruction" src="imgs/photography/pcbs/DSC06707.jpg" alt="" /></p>
+								
+								<h4>Test the Voltage Regulator Board</h4>
+								<p>Plug in the battery board to the voltage regulator board, and turn it on.</p>
+								<p><img class="alignnone instruction" src="imgs/photography/pcbs/DSC06711.jpg" alt="" /></p>
+								<p>Measure the output voltage from the regulator using the pads at the back of the board. The multimeter should read 2.2V.</p>
+								<p><img class="alignnone instruction" src="imgs/photography/pcbs/DSC06716.jpg" alt="" /></p>
+								<p><img class="alignnone instruction" src="imgs/photography/pcbs/DSC06714.jpg" alt="" /></p>
+								
+								<p>To test the Sensor Board and the Microcontroller Board, we need to connect them with ribbon cables. The next section shows you how.</p>
+								 -->
+								
+							</div>
+							<!-- END of WYSIWYG content__-->
+						</article>
+						<div class="nav-btns">
+							<a class="button" href="blog_imprint.html">< Previous</a>
+							<a class="button align-right" href="blog_pcb_ribbon.html">Next ></a>
+						</div>
+						</div><!-- END #blog-post -->
+						</div><!-- END .wrapper -->
+					</section>
 					
-					<p><a href="#"><img class="alignnone size-full wp-image-86" src="imgs/photography/fullscreen09.jpg" alt="" /></a></p>
-				</div>
-				<!-- END of WYSIWYG content__-->
-			</article>
-			<div class="nav-btns">
-				<a class="button" href="blog_imprint.html">< Previous</a>
-				<a class="button align-right" href="blog_pcb_ribbon.html">Next ></a>
-			</div>
-			</div><!-- END #blog-post -->
-			</div><!-- END .wrapper -->
-		</section>
-		
-		<footer id="footer" role="contentinfo">
-			<p class="back-to-top"><a href="#header">Back to top ↑</a></p>
-			<p class="copyright">Pallette &copy; 2016</p>
-			<ul class="social-icons">
-				<li><a href="#" target="_blank" title="Email"><i class="icon-email"></i></a></li>
-				<li><a href="#" target="_blank" title="Twitter"><i class="icon-twitter"></i></a></li>
-				<li><a href="#" target="_blank" title="Vimeo"><i class="icon-vimeo"></i></a></li>
-				<li><a href="#" target="_blank" title="Ello"><i class="icon-ello"></i></a></li>
-				<li><a href="#" target="_blank" title="Github"><i class="icon-github"></i></a></li>
-			</ul>
-		</footer>
-		
-		<!-- Javascripts ______________________________________-->
-		<script src="js/jquery.min.js"></script>
-		<script src="js/retina.min.js"></script>
-		<script src="js/imagesloaded.pkgd.min.js"></script>
-		<script src="js/jquery.lazyloadxt.min.js"></script>
-		<!-- include Masonry -->
-		<script src="js/isotope.pkgd.min.js"></script>
-		<!-- include image popups -->
-		<script src="js/jquery.magnific-popup.min.js"></script>
-		<!-- include svg line drawing plugin -->
-		<script src="js/jquery.lazylinepainter.min.js"></script>
-		<!-- include custom script -->
-		<script src="js/scripts.js"></script>
-		
-	</body>
-</html>
+					<footer id="footer" role="contentinfo">
+						<p class="back-to-top"><a href="#header">Back to top ↑</a></p>
+						<p class="copyright">Pallette &copy; 2016</p>
+						<ul class="social-icons">
+							<li><a href="#" target="_blank" title="Email"><i class="icon-email"></i></a></li>
+							<li><a href="#" target="_blank" title="Twitter"><i class="icon-twitter"></i></a></li>
+							<li><a href="#" target="_blank" title="Vimeo"><i class="icon-vimeo"></i></a></li>
+							<li><a href="#" target="_blank" title="Ello"><i class="icon-ello"></i></a></li>
+							<li><a href="#" target="_blank" title="Github"><i class="icon-github"></i></a></li>
+						</ul>
+					</footer>
+					
+					<!-- Javascripts ______________________________________-->
+					<script src="js/jquery.min.js"></script>
+					<script src="js/retina.min.js"></script>
+					<script src="js/imagesloaded.pkgd.min.js"></script>
+					<script src="js/jquery.lazyloadxt.min.js"></script>
+					<!-- include Masonry -->
+					<script src="js/isotope.pkgd.min.js"></script>
+					<!-- include image popups -->
+					<script src="js/jquery.magnific-popup.min.js"></script>
+					<!-- include svg line drawing plugin -->
+					<script src="js/jquery.lazylinepainter.min.js"></script>
+					<!-- include custom script -->
+					<script src="js/scripts.js"></script>
+					
+				</body>
+			</html>

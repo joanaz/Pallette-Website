@@ -95,7 +95,7 @@ input[type=submit], input[type=button], button, .button {
   margin: -2px .5em .5em 0;
   text-decoration: none !important;
   letter-spacing: 0.1em;
-  color: hotpink;
+  color: #f23081;
 
   //#EA8E00;
   z-index: 2;
@@ -113,7 +113,7 @@ input[type=submit], input[type=button], button, .button {
 input[type=submit]:hover, input[type=button]:hover, .button:hover, button:hover,
 input[type=submit]:focus, input[type=button]:focus {
   color: #F7F6F5;
-  background-color: hotpink;
+  background-color: #f23081;
 
   //#EA8E00;
   border: 2px solid transparent;
@@ -194,7 +194,7 @@ form#searchbar #searchbar-submit {
 _____________________________________ */
 html {
   height: 100%;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 62.5%;
 }
 
@@ -347,7 +347,9 @@ body.fullscreen #header {
 }
 
 #logo a {
-  color: #222;
+  color: #e09b99;
+
+  //#222;
   text-decoration: none;
   white-space: nowrap;
   display: block;
@@ -363,11 +365,15 @@ body.fullscreen #header {
 }
 
 #logo svg path {
-  fill: #222;
+  fill: #e09b99;
+
+  //#222;
 }
 
 #logo #logo-svg-animated svg path {
-  stroke: #222;
+  stroke: #e09b99;
+
+  //#222;
 }
 
 /* Navigation */
@@ -392,8 +398,12 @@ body.fullscreen #header {
 }
 
 #header nav ul li a {
+  font-family: 'San Francisco Text', 'Open Sans', sans-serif;
+  font-weight: 300;
   display: block;
-  color: dimgrey;
+  color: rgba(0, 0, 0, 0.3);
+
+  //dimgrey;
 
   //#fff;
 
@@ -408,7 +418,9 @@ body.fullscreen #header {
 #header nav ul li a::after, #header nav ul li.current-menu-item > a::after, #header nav ul li.current-menu-parent > a::after, #header nav ul li.current_page_parent > a::after {
   content: "";
   display: block;
-  border-bottom: 2px solid #BAEEFE;
+  border-bottom: 2px solid #f23081;
+
+  //#BAEEFE;
 
   //#EA8E00
 
@@ -576,7 +588,9 @@ body.fullscreen {
   max-height: 100%;
   overflow-y: hidden;
   overflow-x: hidden;
-  background: #222;
+  background: white;
+
+  //#222;
 }
 
 body.fullscreen #content {
@@ -615,19 +629,19 @@ body.fullscreen #footer {
 
 /* Text on Dark Background (over images) */
 body.fullscreen #logo a, body.fullscreen .gallery-caption a:hover {
-  color: white;
+  /*color: black;*/
 }
 
 body.fullscreen #logo svg path {
-  fill: white;
+  /*fill: white;*/
 }
 
 body.fullscreen #logo #logo-svg-animated svg path {
-  stroke: white;
+  /*stroke: white;*/
 }
 
 body.fullscreen #header nav ul li a, body.fullscreen #header nav #searchicon i {
-  color: white;
+  color: rgba(0, 0, 0, 0.3);
 }
 
 body.fullscreen #header nav ul.sub-menu {
@@ -636,11 +650,11 @@ body.fullscreen #header nav ul.sub-menu {
 }
 
 body.fullscreen #header nav #menu-burger {
-  color: white;
+  /*color: white;*/
 }
 
 body.fullscreen #header nav form#searchbar #searchbar-input {
-  color: white;
+  /*color: white;*/
   border-bottom-color: white;
 }
 
@@ -744,7 +758,7 @@ body.fullscreen .position-absolute {
 }
 
 #blog-timeline a {
-  color: hotpink;
+  color: #f23081;
 }
 
 #blog-timeline article {
@@ -987,7 +1001,7 @@ article h2 {
 }
 
 .entry-summary > p:first-child {
-  font-family: Packenham, serif;
+  /*font-family: Packenham, serif;*/
 
   /* formerly Times */
   font-style: italic;
@@ -1097,7 +1111,7 @@ article h2 {
 }
 
 .gallery-caption .entry-summary > p {
-  font-family: Times, serif;
+  /*font-family: Times, serif;*/
   font-style: italic;
   font-size: .8em;
   opacity: .8;
@@ -1977,7 +1991,7 @@ ol.comment-list li article {
 
 /* One-line Carousel */
 .blog-oneline-carousel {
-  font-size: .9em;
+  /*font-size: .9em;*/
   position: relative;
   top: 5px;
 }
@@ -1997,7 +2011,11 @@ ol.comment-list li article {
 }
 
 .blog-oneline-carousel ul li {
-  height: 30px;
+  height: 3em;
+  font-size: 2.3em;
+  color: rgba(0, 0, 0, 0.3);
+  line-height: 1.4;
+  mix-blend-mode: multiply;
 }
 
 .blog-oneline-carousel ul li p {
@@ -2010,8 +2028,8 @@ ol.comment-list li article {
 
 .blog-oneline-carousel .viewport {
   float: left;
-  width: 80%;
-  height: 30px;
+  width: 100%;
+  height: 3em;
   overflow: hidden;
   position: relative;
   top: -2px;
@@ -2061,6 +2079,7 @@ _____________________________________ */
   display: inline-block;
   text-align: right;
   padding-left: 1em;
+  color: rgba(0, 0, 0, 0.3);
 }
 
 #footer p.back-to-top {
@@ -2217,7 +2236,7 @@ _____________________________________ */
   }
 
   #header nav ul li a {
-    color: white !important;
+    color: rgba(0, 0, 0, 0.3) !important;
   }
 
   #header nav ul.sub-menu {
