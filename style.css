@@ -836,8 +836,13 @@ body.fullscreen .position-absolute {
   z-index: 9;
 }
 
-#blog-timeline article.active h2, #blog-timeline article.active p, #blog-timeline article:hover h2, #blog-timeline article:hover p {
+#blog-timeline article.active h2, #blog-timeline article:hover h2 {
   color: white;
+  font-weight: 400;
+}
+
+#blog-timeline article.active p, #blog-timeline article:hover p {
+  opacity: 0.5;
 }
 
 #blog-timeline article.active .featured-image::after {
@@ -868,7 +873,7 @@ body.fullscreen .position-absolute {
   left: 0;
   top: 0;
   border-radius: 50%;
-  border: 5px solid #f23081;
+  border: 5px solid #bfbfbf;
   -webkit-transition: all .4s ease;
   -moz-transition: all .4s ease;
   -ms-transition: all .4s ease;
@@ -882,9 +887,7 @@ body.fullscreen .position-absolute {
   height: 100%;
   border-radius: 50%;
   margin: 0;
-  border: 1px solid #f23081;
-
-  //#F7F6F5;
+  border: 5px solid #f23081;
 }
 
 #blog-timeline article:hover .featured-image::after {
@@ -892,7 +895,7 @@ body.fullscreen .position-absolute {
 }
 
 #blog-timeline article .entry-summary {
-  font-size: 1em;
+  font-size: 0.9em;
 }
 
 article.entry.post {
@@ -907,7 +910,7 @@ article.entry.post img {
 }
 
 article.entry.post iframe {
-  width: 100%;
+  /*max-width: 100%;*/
 }
 
 article.entry.post .entry-content, article.entry.post .entry-footer {
@@ -1041,12 +1044,9 @@ article h2 {
 }
 
 .entry-summary > p:first-child {
-  /*font-family: Packenham, serif;*/
-
-  /* formerly Times */
   font-style: italic;
   font-size: 1em;
-  opacity: .9;
+  opacity: .8;
 }
 
 .entry-footer {
