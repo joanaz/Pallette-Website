@@ -129,9 +129,11 @@ html {
 
 body {
   font-family: 'Open Sans', sans-serif;
-  font-size: 1.8em;
-  font-weight: 400;
+
+  /*font-size: 1.8em;*/
+  font-weight: 300;
   background: white;
+  line-height: 1.5;
 }
 
 /* EDITS */
@@ -146,7 +148,8 @@ p {
 
   //#ffc4dc;
   font-size: 1.00em;
-  font-weight: 5;
+
+  /*font-weight: 5;*/
 }
 
 #home {
@@ -258,8 +261,10 @@ h2 {
 h3 {
   font-weight: normal;
   font-size: 1.25em;
-  margin: 0 0 .5em 0;
+  margin: 0.5em 0;
   line-height: 1.4;
+  letter-spacing: .1em;
+  color: #f23081;
 }
 
 h4 {
@@ -346,8 +351,11 @@ img {
 
 img.instruction {
   width: 80%;
-  margin: 0 auto;
+  margin: 1.5em auto;
   display: block;
+  border: 50px solid white;
+  box-shadow: 0 0 0 3px #f23081;
+  border-radius: 60px;
 }
 
 p img, h2 img {
@@ -712,8 +720,16 @@ table p.table-top {
   letter-spacing: .05em;
 }
 
+.material {
+  border-collapse: initial;
+  border-radius: 10px;
+}
+
 .material th {
-  font-weight: bold;
+  letter-spacing: 1.6px;
+  text-align: left;
+  padding-left: 60px;
+  vertical-align: middle;
 }
 
 .material td {
@@ -721,8 +737,8 @@ table p.table-top {
   vertical-align: top;
 }
 
-.material label {
-  font-weight: bold;
+.material td a {
+  font-size: 1.2em;
 }
 
 .button.grey {

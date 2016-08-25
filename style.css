@@ -16,7 +16,7 @@ CONTENTS:
 _____________________________________ */
 
 input, textarea, select, input[type="submit"], input[type="button"], button, .button {
-  font-family: Politica, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   vertical-align: middle;
 }
 
@@ -62,12 +62,34 @@ textarea {
 input[type=text]:focus, input[type=email]:focus, input[type=tel]:focus, input[type=password]:focus, textarea:focus {}
 
 input[type=checkbox] {
-  width: 15px;
-  float: left;
-  margin: 0 1em 0 0;
+  display: none;
+}
+
+.pallette-checkbox {
+  clear: both;
+}
+
+.pallette-checkbox input {
+  display: none;
+}
+
+.pallette-checkbox span {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  margin: .5em .5em .5em 0;
+  vertical-align: middle;
   position: relative;
-  top: 10px;
-  border: 1px solid #ddd;
+  background: url("imgs/checkbox-unchecked.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+}
+
+.pallette-checkbox input[type=checkbox]:checked + span {
+  background: url("imgs/checkbox-checked.png");
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 input[type=radio] {
@@ -707,10 +729,10 @@ body.fullscreen .position-absolute {
 }
 
 #blog-post h1 {
-  font-size: 240%;
-  font-style: italic;
   letter-spacing: .1em;
+  font-size: 2.3em;
   font-weight: bold;
+  color: #000000;
 }
 
 #blog-post .nav-btns {
@@ -757,13 +779,9 @@ body.fullscreen .position-absolute {
   clear: both;
 }
 
-#blog-timeline a {
-  color: #f23081;
-}
-
 #blog-timeline article {
   position: relative;
-  opacity: .64;
+  opacity: .5;
   padding: 0 60px 0 0;
   margin: 0 0 4em 0;
   clear: both;
@@ -776,8 +794,16 @@ body.fullscreen .position-absolute {
   transition: all .4s ease;
 }
 
-#blog-timeline article.active, #blog-timeline article:hover {
+#blog-timeline article.active {
   opacity: 1;
+  background: #f23081;
+  border-radius: 15px;
+}
+
+#blog-timeline article:hover {
+  opacity: 0.8;
+  background: #f23081;
+  border-radius: 15px;
 }
 
 #blog-timeline article::before {
@@ -794,8 +820,9 @@ body.fullscreen .position-absolute {
 }
 
 #blog-timeline article h2 {
-  font-size: 1.1em;
-  font-weight: bold;
+  font-size: 2em;
+  font-weight: 300;
+  color: #000000;
 }
 
 #blog-timeline article h2::before {
@@ -807,6 +834,14 @@ body.fullscreen .position-absolute {
   right: 0;
   position: absolute;
   z-index: 9;
+}
+
+#blog-timeline article.active h2, #blog-timeline article.active p, #blog-timeline article:hover h2, #blog-timeline article:hover p {
+  color: white;
+}
+
+#blog-timeline article.active .featured-image::after {
+  box-shadow: 0 0 0 5px #f23081;
 }
 
 #blog-timeline article .featured-image {
@@ -822,6 +857,7 @@ body.fullscreen .position-absolute {
   -ms-transition: all .4s ease;
   -o-transition: all .4s ease;
   transition: all .4s ease;
+  background: white;
 }
 
 #blog-timeline article .featured-image::after {
@@ -832,7 +868,7 @@ body.fullscreen .position-absolute {
   left: 0;
   top: 0;
   border-radius: 50%;
-  border: 5px solid #F7F6F5;
+  border: 5px solid #f23081;
   -webkit-transition: all .4s ease;
   -moz-transition: all .4s ease;
   -ms-transition: all .4s ease;
@@ -846,7 +882,9 @@ body.fullscreen .position-absolute {
   height: 100%;
   border-radius: 50%;
   margin: 0;
-  border: 1px solid #F7F6F5;
+  border: 1px solid #f23081;
+
+  //#F7F6F5;
 }
 
 #blog-timeline article:hover .featured-image::after {
@@ -854,7 +892,7 @@ body.fullscreen .position-absolute {
 }
 
 #blog-timeline article .entry-summary {
-  font-size: .9em;
+  font-size: 1em;
 }
 
 article.entry.post {
@@ -961,10 +999,12 @@ article h2 {
 .entry-meta > div.entry-date {
   text-transform: uppercase;
   font-size: .75em;
+  color: #bfbfbf;
 }
 
 .entry-date strong {
-  font-size: 1.2em;
+  /*font-size: 1.2em;*/
+  font-weight: bold;
 }
 
 .entry-tags a {
@@ -1005,8 +1045,8 @@ article h2 {
 
   /* formerly Times */
   font-style: italic;
-  font-size: .9em;
-  opacity: .8;
+  font-size: 1em;
+  opacity: .9;
 }
 
 .entry-footer {
