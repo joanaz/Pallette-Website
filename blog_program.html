@@ -268,28 +268,31 @@
 								<!-- WYSIWYG content of post ___-->
 								<p>You will need:
 									<ul>
-										<li>Tested electronic circuit</li>
+										<li>Pallette sensor band</li>
 										<li>Firmware source files</li>
 										<li>Programming cable</li>
 										<li>CC Debugger</li>
 										<li>Bluegiga update tool</li>
 										<li>Windows environment</li>
+										<li>Pallette debugging app</li>
+										<li>Android device</li>
 									</ul>
 								</p>
-
-								<p>The firmware runs on the Bluetooth enabled BLE113 microcontroller. The files are on this <a>Github repo</a>.You will need to install the <a>CC Debugger driver</a>, and the <a>Bluegiga SDK</a> on a Windows environment.</p>
-
-								<h3>Program the sensor band with debugging firmware</h3>
-								<p>To test whether the sensor band is working as expected, we need to install the Pallette debugging app and see whether the app is showing correct values. </p>
-								<p>The Android app is mainly for debugging purposes. The files are on this <a>Github repo</a>. </p>
+								<p>The firmware runs on the Bluetooth enabled BLE113 microcontroller. We have made two versions of firmware: the debugging firmware is for checking whether the sensor band is working correctly; the mouse controller firmware enables the sensor band to control a mouse cursor using your tongue. First, you will need to install the <a>CC Debugger driver</a>, and the <a>Bluegiga SDK</a> on a Windows environment.</p>
+								<h3>Program the debugging firmware</h3>
+								<p>You will need to download the <a>debugging firmware files</a> and install the <a>Pallette debugging app</a> on an Android device. The app will display sensor reading values, so you can see whether they are correct or not. </p>
 								<p>(how to install the app)</p>
-								<p>Next, we need to assemble the sensor band with the programming cable and the CC Debugger, and connect the CC Debugger and your Windows environment with a mini USB cable. Upload the <a>debugging firmware file</a> to the microcontroller using the Bluegiga update tool.</p>
-								<p>	video</p>
+								<p>Next, we need to assemble the sensor band with the programming cable and the CC Debugger, and connect the CC Debugger and your Windows environment with a mini USB cable. Upload the debugging firmware file to the microcontroller using the Bluegiga update tool.</p>
+								<div class="video-wrapper">
+									<iframe src="https://www.youtube.com/embed/NIX1ft5EmCk" frameborder="0" allowfullscreen></iframe>
+								</div>
 
-								<h3>Program the sensor band with mouse controller firmware</h3>
-								<p>Follow the same steps above, but upload the <a>mouse controller firmware file</a> instead of the debugging firmware file. </p>
-								<p>video</p>
-								
+								<h3>Program the mouse controller firmware</h3>
+								<p>Follow the same steps above to program the mouse controller firmware, the firmware files are <a>here</a>.</p>
+								<p>If everything works correctly, now your sensor band should be able to move a mouse cursor on a computer or a mobile device according to your finger movement. The next step is to seal the sensor band, so it's safe to use it inside your mouth.</p>
+								<div class="video-wrapper">
+								<iframe src="https://www.youtube.com/embed/cPJ-OwFIAhY" frameborder="0" allowfullscreen></iframe>
+							</div>
 								
 								
 								

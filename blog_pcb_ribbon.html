@@ -6,7 +6,6 @@
 		
 		<link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon">
 		<link rel="icon" href="imgs/favicon.ico" type="image/x-icon">
-
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		
 		<title>Pallette</title>
@@ -39,9 +38,9 @@
 				
 				<!-- Logo __-->
 				<a href="index.html" rel="home">
-									<img class="image-fit" src="imgs/logo-pallette.png" alt="logo">
-									<img class="image-fit padding-left" src="imgs/pallette@2x.png" alt="logo">
-								</a>
+					<img class="image-fit" src="imgs/logo-pallette.png" alt="logo">
+					<img class="image-fit padding-left" src="imgs/pallette@2x.png" alt="logo">
+				</a>
 				
 				<!-- Main menu __-->
 				<nav id="mainmenu" role="navigation">
@@ -267,8 +266,7 @@
 								<h1>PCB Ribbon</h1>
 								
 								<!-- WYSIWYG content of post ___-->
-
-								<p>Materials used in this step:
+								<p>You will need:
 									<ul>
 										<li>Assembled PCBs</li>
 										<li>Ribbon cable</li>
@@ -279,61 +277,64 @@
 										<li>Multimeter</li>
 										<li>CC Debugger</li>
 										<li>Programming cable</li>
+										<li>Tape</li>
+										<li>Marker</li>
 									</ul>
 								</p>
 								
-										<p>Now you should have boards look like this:</p>
-										<ol><li>The Battery Board
-										<p><img class="alignnone instruction" src="imgs/photography/pcbs/DSC06659.jpg" alt="" /></p>
+								<p>Now you should have boards that look like this:
+									<ol>
+										<li>The Battery Board
+											<p><img class="alignnone instruction" src="imgs/photography/pcbs/DSC06659.jpg" alt="" /></p>
 										</li>
 										<li>The Voltage Regulator Board
-										<p><img class="alignnone instruction" src="imgs/photography/pcbs/DSC06657.jpg" alt="" /></p>
-									</li>
-									<li>The Sensor Board
-										<p><img class="alignnone instruction" src="imgs/photography/pcbs/DSC06683.jpg" alt="" /></p>
-									</li>
-									<li>The Microcontroller Board
-										<p><img class="alignnone instruction" src="imgs/photography/pcbs/DSC06684.jpg" alt="" /></p>
-									</li>
-								</ol>
+											<p><img class="alignnone instruction" src="imgs/photography/pcbs/DSC06657.jpg" alt="" /></p>
+										</li>
+										<li>The Sensor Board
+											<p><img class="alignnone instruction" src="imgs/photography/pcbs/DSC06683.jpg" alt="" /></p>
+										</li>
+										<li>The Microcontroller Board
+											<p><img class="alignnone instruction" src="imgs/photography/pcbs/DSC06684.jpg" alt="" /></p>
+										</li>
+									</ol>
+								</p>
+								
 								<div class="colorful-content-box">
-										<p>Or alternatively this (photo features older design):</p>
-										<p><img class="alignnone instruction" src="imgs/photography/pcbs/DSC06667.jpg" alt="" /></p>
-									</div>
-									<h4>Trim the legs</h4>
-										<p>You need to trim the legs of the connectors with a cutter.</p>
-										
-										<p><img class="alignnone instruction" src="imgs/photography/pcbs/DSC06662.jpg" alt="" /></p>
-										<p><img class="alignnone instruction" src="imgs/photography/pcbs/DSC06663.jpg" alt="" /></p>
-										<p><img class="alignnone instruction" src="imgs/photography/pcbs/DSC06658.jpg" alt="" /></p>
-										<p><img class="alignnone instruction" src="imgs/photography/pcbs/DSC06665.jpg" alt="" /></p>
-										
-										<br />
-										<p>Now we have the little PCBs with components soldered on them, we need to connect them together to make a complete circuitry. However, before we do that, it's better to test each board to make sure that there are no soldering mistakes.</p>
-											
-											<h4>Test the Battery Board</h4>
-											<p>You need 2x batteries and a multimeter.</p>
-											<p><img class="alignnone instruction" src="imgs/photography/pcbs/DSC06690.jpg" alt="" /></p>
-											<p>Stack two batteries and tape their side together.</p>
-											<p><img class="alignnone instruction" src="imgs/photography/pcbs/DSC06688.jpg" alt="" /></p>
-											<p>Push the batteries inside the battery holder, positive side (flat side) up.</p>
-											<p><img class="alignnone instruction" src="imgs/photography/pcbs/DSC06701.jpg" alt="" /></p>
-											<p>If the batteries are too loose in the battery holder, add a bit of solder to the central round pad of the battery holder footprint.</p>
-											<p><img class="alignnone instruction" src="imgs/photography/pcbs/DSC06695.jpg" alt="" /></p>
-											<p>Turn on the switch by flipping the lever up, and measure the voltage across the 2 pin header, the reading should be around 3.1V.</p>
-											<p><img class="alignnone instruction" src="imgs/photography/pcbs/DSC06707.jpg" alt="" /></p>
-											
-											<h4>Test the Voltage Regulator Board</h4>
-											<p>Plug in the battery board to the voltage regulator board, and turn it on.</p>
-											<p><img class="alignnone instruction" src="imgs/photography/pcbs/DSC06711.jpg" alt="" /></p>
-											<p>Measure the output voltage from the regulator using the pads at the back of the board. The multimeter should read 2.2V.</p>
-											<p><img class="alignnone instruction" src="imgs/photography/pcbs/DSC06716.jpg" alt="" /></p>
-											<p><img class="alignnone instruction" src="imgs/photography/pcbs/DSC06714.jpg" alt="" /></p>
-											
-											<p>To test the Sensor Board and the Microcontroller Board, we need to connect them with ribbon cables. The next section shows you how.</p>
-											
-
-
+									<p>Or alternatively this (photo features older design):</p>
+									<p><img class="alignnone instruction" src="imgs/photography/pcbs/DSC06667.jpg" alt="" /></p>
+								</div>
+								<h4>Trim the legs</h4>
+								<p>You need to trim the legs of the connectors with a cutter.</p>
+								
+								<p><img class="alignnone instruction" src="imgs/photography/pcbs/DSC06662.jpg" alt="" /></p>
+								<p><img class="alignnone instruction" src="imgs/photography/pcbs/DSC06663.jpg" alt="" /></p>
+								<p><img class="alignnone instruction" src="imgs/photography/pcbs/DSC06658.jpg" alt="" /></p>
+								<p><img class="alignnone instruction" src="imgs/photography/pcbs/DSC06665.jpg" alt="" /></p>
+								
+								<br />
+								<p>Now we have the little PCBs with components soldered on them, we need to connect them together to make a complete circuitry. However, before we do that, it's better to test each board to make sure that there are no soldering mistakes.</p>
+								
+								<h4>Test the Battery Board</h4>
+								<p>You need 2x batteries and a multimeter.</p>
+								<p><img class="alignnone instruction" src="imgs/photography/pcbs/DSC06690.jpg" alt="" /></p>
+								<p>Stack two batteries and tape their side together.</p>
+								<p><img class="alignnone instruction" src="imgs/photography/pcbs/DSC06688.jpg" alt="" /></p>
+								<p>Push the batteries inside the battery holder, positive side (flat side) up.</p>
+								<p><img class="alignnone instruction" src="imgs/photography/pcbs/DSC06701.jpg" alt="" /></p>
+								<p>If the batteries are too loose in the battery holder, add a bit of solder to the central round pad of the battery holder footprint.</p>
+								<p><img class="alignnone instruction" src="imgs/photography/pcbs/DSC06695.jpg" alt="" /></p>
+								<p>Turn on the switch by flipping the lever up, and measure the voltage across the 2 pin header, the reading should be around 3.1V.</p>
+								<p><img class="alignnone instruction" src="imgs/photography/pcbs/DSC06707.jpg" alt="" /></p>
+								
+								<h4>Test the Voltage Regulator Board</h4>
+								<p>Plug in the battery board to the voltage regulator board, and turn it on.</p>
+								<p><img class="alignnone instruction" src="imgs/photography/pcbs/DSC06711.jpg" alt="" /></p>
+								<p>Measure the output voltage from the regulator using the pads at the back of the board. The multimeter should read 2.2V.</p>
+								<p><img class="alignnone instruction" src="imgs/photography/pcbs/DSC06716.jpg" alt="" /></p>
+								<p><img class="alignnone instruction" src="imgs/photography/pcbs/DSC06714.jpg" alt="" /></p>
+								
+								<p>To test the Sensor Board and the Microcontroller Board, we need to connect them with ribbon cables. The next section shows you how.</p>
+								
 								<p>
 									With the clay imprint and the prepared PCB's, we're ready to craft the heart of Pallette - the sensor ribbon. You'll align the boards against the clay imprint, measure lengths and angles for ribbon cables, and solder everything together.
 								</p>
@@ -341,8 +342,7 @@
 								<p><img class="alignnone instruction" src="imgs/photography/ribbon/DSC06742.jpg" alt="" /></p>
 								<p>Tape boards at desired locations</p>
 								<p><img class="alignnone instruction" src="imgs/photography/ribbon/DSC06744.jpg" alt="" /></p>
-
-							
+								
 								<p>We will use 0.05" pitch ribbon cables to connect them. Cut two 5cm 2-conductor ribbon cables and a 5cm 6-conductor ribbon cable.</p>
 								<p><img class="alignnone instruction" src="imgs/photography/ribbon/DSC06747.jpg" alt="" /></p>
 								<p>Strip the ends of the ribbon cables.</p>
@@ -363,54 +363,53 @@
 								<p><img class="alignnone instruction" src="imgs/photography/ribbon/DSC06779.jpg" alt="" /></p>
 								<p>Now we have the assembled sensor band.</p>
 								<p><img class="alignnone instruction" src="imgs/photography/ribbon/DSC06792.jpg" alt="" /></p>
-
 								
-							
-							
-							
-							
-							
-							
-							<p>We have to test the assembled sensor band to ensure that the circuit functions correctly before we seal it up. The next section explains how to use the firmware and the app to test the circuit. </p>
-							
-							
+								
+								
+								
+								
+								
+								
+								<p>We have to test the assembled sensor band to ensure that the circuit functions correctly before we seal it up. The next section explains how to use the firmware and the app to test the circuit. </p>
+								
+								
+							</div>
+							<!-- END of WYSIWYG content__-->
+						</article>
+						<div class="nav-btns">
+							<a class="button" href="blog_pcb.html">< Previous</a>
+							<a class="button align-right" href="blog_program.html">Next ></a>
 						</div>
-						<!-- END of WYSIWYG content__-->
-					</article>
-					<div class="nav-btns">
-						<a class="button" href="blog_pcb.html">< Previous</a>
-						<a class="button align-right" href="blog_program.html">Next ></a>
-					</div>
-					</div><!-- END #blog-post -->
-					</div><!-- END .wrapper -->
-				</section>
-				
-				
-				<footer id="footer" role="contentinfo">
-					<p class="back-to-top"><a href="#header">Back to top ↑</a></p>
-					<p class="copyright">Pallette &copy; 2016</p>
-					<ul class="social-icons">
-						<li><a href="#" target="_blank" title="Email"><i class="icon-email"></i></a></li>
-						<li><a href="#" target="_blank" title="Twitter"><i class="icon-twitter"></i></a></li>
-						<li><a href="#" target="_blank" title="Vimeo"><i class="icon-vimeo"></i></a></li>
-						<li><a href="#" target="_blank" title="Ello"><i class="icon-ello"></i></a></li>
-						<li><a href="#" target="_blank" title="Github"><i class="icon-github"></i></a></li>
-					</ul>
-				</footer>
-				
-				<!-- Javascripts ______________________________________-->
-				<script src="js/jquery.min.js"></script>
-				<script src="js/retina.min.js"></script>
-				<script src="js/imagesloaded.pkgd.min.js"></script>
-				<script src="js/jquery.lazyloadxt.min.js"></script>
-				<!-- include Masonry -->
-				<script src="js/isotope.pkgd.min.js"></script>
-				<!-- include image popups -->
-				<script src="js/jquery.magnific-popup.min.js"></script>
-				<!-- include svg line drawing plugin -->
-				<script src="js/jquery.lazylinepainter.min.js"></script>
-				<!-- include custom script -->
-				<script src="js/scripts.js"></script>
-				
-			</body>
-		</html>
+						</div><!-- END #blog-post -->
+						</div><!-- END .wrapper -->
+					</section>
+					
+					
+					<footer id="footer" role="contentinfo">
+						<p class="back-to-top"><a href="#header">Back to top ↑</a></p>
+						<p class="copyright">Pallette &copy; 2016</p>
+						<ul class="social-icons">
+							<li><a href="#" target="_blank" title="Email"><i class="icon-email"></i></a></li>
+							<li><a href="#" target="_blank" title="Twitter"><i class="icon-twitter"></i></a></li>
+							<li><a href="#" target="_blank" title="Vimeo"><i class="icon-vimeo"></i></a></li>
+							<li><a href="#" target="_blank" title="Ello"><i class="icon-ello"></i></a></li>
+							<li><a href="#" target="_blank" title="Github"><i class="icon-github"></i></a></li>
+						</ul>
+					</footer>
+					
+					<!-- Javascripts ______________________________________-->
+					<script src="js/jquery.min.js"></script>
+					<script src="js/retina.min.js"></script>
+					<script src="js/imagesloaded.pkgd.min.js"></script>
+					<script src="js/jquery.lazyloadxt.min.js"></script>
+					<!-- include Masonry -->
+					<script src="js/isotope.pkgd.min.js"></script>
+					<!-- include image popups -->
+					<script src="js/jquery.magnific-popup.min.js"></script>
+					<!-- include svg line drawing plugin -->
+					<script src="js/jquery.lazylinepainter.min.js"></script>
+					<!-- include custom script -->
+					<script src="js/scripts.js"></script>
+					
+				</body>
+			</html>
