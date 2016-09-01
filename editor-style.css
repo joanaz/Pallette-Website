@@ -175,7 +175,7 @@ li {
   mix-blend-mode: multiply;
   font-size: 1.2em;
   line-height: 1.4;
-  color: rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.4);
 }
 
 #contact p {
@@ -224,7 +224,7 @@ ul {
   margin: -2px .5em 0 0;
   text-decoration: none !important;
   letter-spacing: 0.1em;
-  color: #EA8E00;
+  color: #f23081;
   z-index: 2;
   overflow: hidden;
   position: relative;
@@ -318,7 +318,7 @@ a {
 
   //#BAEEFE;
 
-  //#EA8E00;
+  //#f23081;
   text-decoration: none;
   -webkit-transition: all .2s ease;
   -moz-transition: all .2s ease;
@@ -425,7 +425,7 @@ hr {
   border: solid 2px #eeeeee;
   clear: both;
 
-  /*background: #EA8E00;*/
+  /*background: #f23081;*/
   height: 2px;
 
   /*width: 80px;*/
@@ -721,7 +721,7 @@ table sup {
 
 table p.table-top {
   display: inline-block;
-  background: #EA8E00;
+  background: #f23081;
   color: #F7F6F5;
   text-transform: uppercase;
   padding: 7px 1em 5px 1em;
@@ -911,17 +911,17 @@ table p.table-top {
 }
 
 .button.orange {
-  border-color: #EA8E00 !important;
-  color: #EA8E00;
+  border-color: #f23081 !important;
+  color: #f23081;
 }
 
 .orange {
-  color: #EA8E00;
+  color: #f23081;
 }
 
 .button.orange:hover, .button.orange:focus {
   color: #F7F6F5;
-  background-color: #EA8E00;
+  background-color: #f23081;
 }
 
 .button.yellow {
@@ -985,7 +985,7 @@ blockquote::before {
   position: absolute;
   left: -1em;
   font-size: 1.5em;
-  color: #EA8E00;
+  color: #f23081;
   font-family: serif;
   font-style: italic;
   font-weight: normal;

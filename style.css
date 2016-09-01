@@ -75,9 +75,9 @@ input[type=checkbox] {
 
 .pallette-checkbox span {
   display: inline-block;
-  width: 25px;
-  height: 25px;
-  margin: .5em .5em .5em 0;
+  width: 20px;
+  height: 20px;
+  margin: .5em 0 .5em 0;
   vertical-align: middle;
   position: relative;
   background: url("imgs/checkbox-unchecked.png");
@@ -119,7 +119,7 @@ input[type=submit], input[type=button], button, .button {
   letter-spacing: 0.1em;
   color: #f23081;
 
-  //#EA8E00;
+  //#f23081;
   z-index: 2;
   overflow: hidden;
   position: relative;
@@ -136,8 +136,6 @@ input[type=submit]:hover, input[type=button]:hover, .button:hover, button:hover,
 input[type=submit]:focus, input[type=button]:focus {
   color: #F7F6F5;
   background-color: #f23081;
-
-  //#EA8E00;
   border: 2px solid transparent;
 }
 
@@ -222,17 +220,7 @@ html {
 
 body {
   background: white;
-
-  //#9E8F70;
-
-  //rgb(148, 9, 66);
-
-  /*rgb(197,12,87); rgb(189, 43, 102);  #9d033e; #F7F6F5;*/
   color: black;
-
-  //#fff;
-
-  /* #ffccdb;  #ff9a8e;#222; */
   font-size: 1.6em;
   letter-spacing: 0.03em;
   overflow-x: hidden;
@@ -305,7 +293,7 @@ body.fullscreen #header {
 #loader span {
   display: block;
   height: 100%;
-  background: #EA8E00;
+  background: #f23081;#f23081;
   -webkit-animation: loadanim 3s linear;
   -moz-animation: loadanim 3s linear;
   -o-animation: loadanim 3s linear;
@@ -423,14 +411,8 @@ body.fullscreen #header {
   font-family: 'San Francisco Text', 'Open Sans', sans-serif;
   font-weight: 300;
   display: block;
-  color: rgba(0, 0, 0, 0.3);
-
-  //dimgrey;
-
-  //#fff;
-
-  /* #222;*/
-  font-size: 1.05em;
+  color: rgba(0, 0, 0, 0.4);
+  font-size: 1.2em;
   padding: 0 0 1em 0;
   text-decoration: none;
   position: relative;
@@ -441,11 +423,6 @@ body.fullscreen #header {
   content: "";
   display: block;
   border-bottom: 2px solid #f23081;
-
-  //#BAEEFE;
-
-  //#EA8E00
-
   max-width: 100px;
   margin: 0 auto;
   z-index: -1;
@@ -508,7 +485,7 @@ body.fullscreen #header {
   top: 0;
   right: 0;
   bottom: 0;
-  background: #EA8E00;
+  background: #f23081;
   z-index: -1;
   -webkit-transform: scale(0, 1);
   transform: scale(0, 1);
@@ -524,7 +501,7 @@ body.fullscreen #header {
 }
 
 #header nav ul.sub-menu li a:hover {
-  border-bottom-color: #EA8E00;
+  border-bottom-color: #f23081;
   color: #F7F6F5;
   text-decoration: none;
 }
@@ -611,8 +588,6 @@ body.fullscreen {
   overflow-y: hidden;
   overflow-x: hidden;
   background: white;
-
-  //#222;
 }
 
 body.fullscreen #content {
@@ -663,7 +638,7 @@ body.fullscreen #logo #logo-svg-animated svg path {
 }
 
 body.fullscreen #header nav ul li a, body.fullscreen #header nav #searchicon i {
-  color: rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.4);
 }
 
 body.fullscreen #header nav ul.sub-menu {
@@ -813,9 +788,11 @@ body.fullscreen .position-absolute {
   right: -5px;
   width: 10px;
   height: 10px;
-  border: 2px solid #999;
-  border-radius: 6px;
-  background: #F7F6F5;
+
+  /*border: 2px solid #999;*/
+  /*border-radius: 6px;*/
+  /*background: #F7F6F5;*/
+
   z-index: 10;
 }
 
@@ -827,9 +804,11 @@ body.fullscreen .position-absolute {
 
 #blog-timeline article h2::before {
   content: "";
-  width: 30px;
-  height: 1px;
-  background: #ccc;
+
+  /*width: 30px;*/
+  /*height: 1px;*/
+  /*background: #ccc;*/
+
   top: 12px;
   right: 0;
   position: absolute;
@@ -1190,7 +1169,7 @@ article h2 {
 #gallery-filter ul li a::after {
   content: "";
   display: block;
-  border-bottom: 2px solid #EA8E00;
+  border-bottom: 2px solid #f23081;
   width: 0;
   position: absolute;
   bottom: 0;
@@ -1260,8 +1239,8 @@ article h2 {
 }
 
 #grid-changer ul li a:hover {
-  border-color: #EA8E00;
-  color: #EA8E00;
+  border-color: #f23081;
+  color: #f23081;
 }
 
 #grid-changer svg {
@@ -1441,11 +1420,11 @@ iframe#okplayer {
 }
 
 #gallerynav a:hover, #gallerynav a.active {
-  color: #EA8E00;
+  color: #f23081;
 }
 
 #gallerynav a:hover svg {
-  fill: #EA8E00;
+  fill: #f23081;
 }
 
 #gallerynav a.pause {
@@ -1656,7 +1635,7 @@ body.gallerythumbsrevealed .position-absolute {
 }
 
 #gallerypuntiks a:hover {
-  border-color: #EA8E00;
+  border-color: #f23081;
 }
 
 #gallerypuntiks a.activeSlide {
@@ -1848,7 +1827,7 @@ ol.comment-list li article {
 .post-password-form {
   display: inline-block;
   padding: 1.5em 2em 0 3em;
-  background: #EA8E00;
+  background: #f23081;
   border-radius: 60px;
   margin: 0 0 30vh 30px;
   position: relative;
@@ -1896,7 +1875,7 @@ ol.comment-list li article {
 }
 
 .whistles-toggle .whistle-title:hover::before, .whistles-accordion .whistle-title:hover::before {
-  background: #EA8E00;
+  background: #f23081;
   color: #F7F6F5;
 }
 
@@ -1929,7 +1908,7 @@ ol.comment-list li article {
   text-align: center;
   font-size: 0.9em;
   cursor: pointer;
-  background: #EA8E00;
+  background: #f23081;
   border: 1px solid #222;
   border-bottom: 0;
   color: #F7F6F5;
@@ -2163,7 +2142,7 @@ ul.social-icons li a {
 }
 
 ul.social-icons li a:hover i {
-  color: #EA8E00;
+  color: #f23081;
   -moz-animation: spinHorizontal .5s linear;
   -o-animation: spinHorizontal .5s linear;
   -webkit-animation: spinHorizontal .5s linear;
