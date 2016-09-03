@@ -3,7 +3,6 @@
 	<head>
 		<meta charset="utf-8">
 		
-		
 		<link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon">
 		<link rel="icon" href="imgs/favicon.ico" type="image/x-icon">
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -67,11 +66,15 @@
 			<!-- END .wrapper -->
 		</header>
 		
+		
+		
 		<!-- MAIN CONTENT SECTION  _____________________________________________-->
 		<section id="content" role="main">
+			
 			<div class="featured-image-header">
 				<div id="">
-				  <img src="imgs/MakingHeaderPics/programTongueWorldSmall.png">
+				  <!--img src="imgs/PalletteINSTRO/2_PCB.png"/-->
+				  <img src="imgs/MakingHeaderPics/REFLOW_BOARDS_CROP.png">
 				</div>
 			</div>
 			
@@ -149,7 +152,7 @@
 					</a>
 					
 					<a href="blog_pcb.html">
-						<article>
+						<article class="active">
 							<div class="featured-image">
 								<img src="imgs/tiles/2_PCB.jpg" alt="" />
 							</div>
@@ -183,7 +186,7 @@
 					</a>
 					
 					<a href="blog_program.html">
-						<article class="active">
+						<article>
 							<div class="featured-image">
 								<img src="imgs/tiles/4_Program.jpg" alt="" />
 							</div>
@@ -254,62 +257,52 @@
 				<!-- Shown Blog Post ___-->
 				<div id="blog-post">
 					<div class="nav-btns">
-						<a class="button" href="blog_pcb_ribbon.html">< Previous</a>
-						<a class="button align-right" href="blog_seal.html">Next ></a>
+						<a class="button" href="blog_imprint.html">< Previous</a>
+						<a class="button align-right" href="blog_pcb_ribbon.html">Next ></a>
 					</div>
 					<article class="entry post">
+						<!-- Post meta ___-->
 						<div class="entry-meta">
 							<div class="entry-date">
-								<strong>Step 5</strong> / Making Pallette
+								<strong>Step 3</strong> / Making Pallette
 							</div>
+							
 						</div>
 						
 						<div class="entry-content">
 							<!-- Heading ___-->
-							<h1>Program Pallette</h1>
+							<h1>Assemble PCBs</h1>
 							
 							<!-- WYSIWYG content of post ___-->
 							<p>You will need:
 								<ul>
-									<li>Pallette sensor band</li>
-									<li>Firmware source files</li>
-									<li>Programming cable</li>
-									<li>CC Debugger</li>
-									<li>Windows environment</li>
-									<li>Bluegiga update tool</li>
-									<li>Android device</li>
-									<li>Pallette debugging app</li>
+									<li>Hot plate</li>
+									<li>PCB</li>
+									<li>Electronic components</li>
+									<li>Solder paste</li>
+									<li>Solder flux</li>
+									<li>Tweezers</li>
+									<li>Dremel</li>
 								</ul>
 							</p>
 							
-							<p>The firmware runs on the Bluetooth enabled BLE113 microcontroller. We have made two versions of firmware: the <a href="https://github.com/DVLevine/Pallette-DEBUG">debugging firmware</a> is for checking whether the sensor band is working correctly; the <a href="https://github.com/DVLevine/PalletteBG">mouse controller firmware</a> enables the sensor band to control a mouse cursor using your tongue. First, you will need to install the <a href="http://www.ti.com/tool/flash-programmer">CC Debugger driver</a>, and the <a href="https://www.bluegiga.com/en-US/download/?file=wBrIIHK4TKqMqtbkkw2-XA&title=Bluetooth%2520Smart%2520Software%2520and%2520SDK%2520v.1.4.2&filename=Bluegiga_ble-1.4.2-130.exe">Bluegiga SDK</a> on a Windows environment.</p>
-							<h3>Program the debugging firmware</h3>
-							<p>You will need to download the <a href="https://github.com/DVLevine/Pallette-DEBUG">debugging firmware files</a> and install the <a href="https://github.com/rohit-jain/pallette-app">Pallette debugging app</a> on an Android device. The app will display sensor reading values, so you can see whether they are correct or not. </p>
-							<p>(how to install the app)</p>
-							<p>Next, we need to assemble the sensor band with the programming cable and the CC Debugger, and connect the CC Debugger and your Windows environment with a mini USB cable. Upload the debugging firmware file to the microcontroller using the Bluegiga update tool.</p>
-							<div class="video-wrapper">
-								<iframe src="https://www.youtube.com/embed/NIX1ft5EmCk" frameborder="0" allowfullscreen></iframe>
-							</div>
-							<h3>Program the mouse controller firmware</h3>
-							<p>Follow the same steps above to program the <a href="https://github.com/DVLevine/PalletteBG">mouse controller firmware</a>.</p>
-							<p>If everything works correctly, now your sensor band should be able to move a mouse cursor on a computer or a mobile device according to your finger movement. The next step is to seal the sensor band, so it's safe to use it inside your mouth.</p>
-							<div class="video-wrapper">
-								<iframe src="https://www.youtube.com/embed/cPJ-OwFIAhY" frameborder="0" allowfullscreen></iframe>
-							</div>
+							
+							<p>After you have received the PCBs from the manufacturer, you can either purchase the components as listed on the Bill of Materials (BOM) in the repo and solder the components yourself, or send your blank PCBs and the <strong>Assembly.zip</strong> to a PCB assembler to receive assembled PCBs. The video below shows you how to reflow PCBs yourself.</p>
+							<p>video</p>
+							
 							
 						</div>
 						<!-- END of WYSIWYG content__-->
 					</article>
 					<div class="nav-btns">
-						<a class="button" href="blog_pcb_ribbon.html">< Previous</a>
-						<a class="button align-right" href="blog_seal.html">Next ></a>
+						<a class="button" href="blog_imprint.html">< Previous</a>
+						<a class="button align-right" href="blog_pcb_ribbon.html">Next ></a>
 					</div>
 				</div>
 				<!-- END #blog-post -->
 			</div>
 			<!-- END .wrapper -->
 		</section>
-		
 		
 		<footer id="footer" role="contentinfo">
 			<p class="back-to-top"><a href="#header">Back to top ↑</a></p>

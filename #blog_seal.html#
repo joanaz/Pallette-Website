@@ -3,7 +3,6 @@
 	<head>
 		<meta charset="utf-8">
 		
-		
 		<link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon">
 		<link rel="icon" href="imgs/favicon.ico" type="image/x-icon">
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -65,13 +64,19 @@
 				</nav>
 			</div>
 			<!-- END .wrapper -->
+			
 		</header>
+		
+		
 		
 		<!-- MAIN CONTENT SECTION  _____________________________________________-->
 		<section id="content" role="main">
+			
 			<div class="featured-image-header">
 				<div id="">
-				  <img src="imgs/MakingHeaderPics/programTongueWorldSmall.png">
+					<!--img src="imgs/photography/fullscreen01.jpg"alt="" /-->
+					<!--img src="imgs/PalletteINSTRO/5_Cover.png"/-->
+					<img src="imgs/MakingHeaderPics/SEAL.png">
 				</div>
 			</div>
 			
@@ -95,7 +100,6 @@
 						</a></li>
 					</ul>
 				</nav>
-				
 				<div id="blog-timeline">
 					<a href="blog_materials.html">
 						<article>
@@ -183,7 +187,7 @@
 					</a>
 					
 					<a href="blog_program.html">
-						<article class="active">
+						<article>
 							<div class="featured-image">
 								<img src="imgs/tiles/4_Program.jpg" alt="" />
 							</div>
@@ -200,7 +204,7 @@
 					</a>
 					
 					<a href="blog_seal.html">
-						<article>
+						<article class="active">
 							<div class="featured-image">
 								<img src="imgs/tiles/5_Seal.jpg" alt="" />
 							</div>
@@ -254,55 +258,87 @@
 				<!-- Shown Blog Post ___-->
 				<div id="blog-post">
 					<div class="nav-btns">
-						<a class="button" href="blog_pcb_ribbon.html">< Previous</a>
-						<a class="button align-right" href="blog_seal.html">Next ></a>
+						<a class="button" href="blog_program.html">< Previous</a>
+						<a class="button align-right" href="blog_complete.html">Next ></a>
 					</div>
 					<article class="entry post">
 						<div class="entry-meta">
 							<div class="entry-date">
-								<strong>Step 5</strong> / Making Pallette
+								<strong>Step 6</strong> / Making Pallette
 							</div>
 						</div>
 						
 						<div class="entry-content">
 							<!-- Heading ___-->
-							<h1>Program Pallette</h1>
+							<h1>Seal Electronics</h1>
 							
 							<!-- WYSIWYG content of post ___-->
+							<p>
+								It's time to waterproof Pallette and complete the housing.
+							</p>
+							
+							
 							<p>You will need:
 								<ul>
-									<li>Pallette sensor band</li>
-									<li>Firmware source files</li>
-									<li>Programming cable</li>
-									<li>CC Debugger</li>
-									<li>Windows environment</li>
-									<li>Bluegiga update tool</li>
-									<li>Android device</li>
-									<li>Pallette debugging app</li>
+									<li>Assembled PCB Ribbon</li>
+									<li>Nylon tubing</li>
+									<li>Silicone Suba Stopper</li>
+									<li>Food grade acrylated olefin heat shrink tubing</li>
+									<li>Soldering iron</li>
+									<li>Solder wire</li>
+									<li>Wire cutter</li>
 								</ul>
 							</p>
 							
-							<p>The firmware runs on the Bluetooth enabled BLE113 microcontroller. We have made two versions of firmware: the <a href="https://github.com/DVLevine/Pallette-DEBUG">debugging firmware</a> is for checking whether the sensor band is working correctly; the <a href="https://github.com/DVLevine/PalletteBG">mouse controller firmware</a> enables the sensor band to control a mouse cursor using your tongue. First, you will need to install the <a href="http://www.ti.com/tool/flash-programmer">CC Debugger driver</a>, and the <a href="https://www.bluegiga.com/en-US/download/?file=wBrIIHK4TKqMqtbkkw2-XA&title=Bluetooth%2520Smart%2520Software%2520and%2520SDK%2520v.1.4.2&filename=Bluegiga_ble-1.4.2-130.exe">Bluegiga SDK</a> on a Windows environment.</p>
-							<h3>Program the debugging firmware</h3>
-							<p>You will need to download the <a href="https://github.com/DVLevine/Pallette-DEBUG">debugging firmware files</a> and install the <a href="https://github.com/rohit-jain/pallette-app">Pallette debugging app</a> on an Android device. The app will display sensor reading values, so you can see whether they are correct or not. </p>
-							<p>(how to install the app)</p>
-							<p>Next, we need to assemble the sensor band with the programming cable and the CC Debugger, and connect the CC Debugger and your Windows environment with a mini USB cable. Upload the debugging firmware file to the microcontroller using the Bluegiga update tool.</p>
-							<div class="video-wrapper">
-								<iframe src="https://www.youtube.com/embed/NIX1ft5EmCk" frameborder="0" allowfullscreen></iframe>
-							</div>
-							<h3>Program the mouse controller firmware</h3>
-							<p>Follow the same steps above to program the <a href="https://github.com/DVLevine/PalletteBG">mouse controller firmware</a>.</p>
-							<p>If everything works correctly, now your sensor band should be able to move a mouse cursor on a computer or a mobile device according to your finger movement. The next step is to seal the sensor band, so it's safe to use it inside your mouth.</p>
-							<div class="video-wrapper">
-								<iframe src="https://www.youtube.com/embed/cPJ-OwFIAhY" frameborder="0" allowfullscreen></iframe>
-							</div>
+							<!--h3> Battery Enclosure</h3>
+							<p>
+								The battery enclosure  enables you to change batteries. <br> -->
+								<p>
+									To begin, cut roughly 1 inch of nylon tubing such that it encompasses the pcb and switch portion of the battery module.
+								</p>
+								<!-- Plug the battery holder into the main circuit.   -->
+								<!--Around the battery holder place 1 inch section of hard plastic tube, with an o-ring around the end.-->
+								<!--Slide these pieces within the heatshrink tubing, and also use rubber bands to hold them there. (pic).-->
+								<p><img class="alignnone instruction" src="imgs/photography/seal/DSC06807.jpg" alt="" /></p>
+								<p><img class="alignnone instruction" src="imgs/photography/seal/DSC06811.jpg" alt="" /></p>
+								
+								<p> Once this is done, plug the battery module back into the sensor band.</p>
+								
+								<p><img class="alignnone instruction" src="imgs/photography/seal/DSC06819.jpg" alt="" /></p>
+								<!--p><img class="alignnone instruction" src="imgs/photography/seal/DSC06823.jpg" alt="" /></p-->
+								<!--h3> Full Enclosure</h3-->
+								
+								<p><img class="alignnone instruction" src="imgs/photography/seal/DSC06833.jpg" alt="" /></p>
+								<p> Slide the battery cover tube over the battery module and cap the end using the Suba stopper. </p>
+								
+								<p><img class="alignnone instruction" src="imgs/photography/seal/DSC06835.jpg" alt="" /></p>
+								<p><img class="alignnone instruction" src="imgs/photography/seal/DSC06838.jpg" alt="" /></p>
+								<p> Carefully slide the ribbon circuit with battery cover tube into the heatshrink tubing. Use the heatgun and clay imprint to shape the final enclosure. (see video) </p>
+								<p><img class="alignnone instruction" src="imgs/photography/seal/DSC06844.jpg" alt="" /></p>
+							<video></video>video
+							<p><img class="alignnone instruction" src="imgs/photography/seal/DSC06849.jpg" alt="" /></p>
+							
+							<!--						<p>
+								Using the heatshrink tubing, cut a length that encompasses the whole of the soldered circuit without the battery holder. (pic)
+							</p>
+							<p>
+								Press the tube-covered circuit up against the imprint, to complete the final arch. Use rubber bands to hold the tube-covered circuit against the clay.
+							</p>
+							-->
+							<p>
+								Heat everything up with a heatgun until full shrinkage. While the end of the heatshrink tubing is heated (feels rubbery) and open on the micro-controller side, clamp it shut with your glove to seal it. Inspect the seal (pic).
+							</p>
+							<p> Once everything seals, remove it from the imprint, and cap the battery tube with a stopper (pic) <p>
+								<p><img class="alignnone instruction" src="imgs/photography/seal/DSC06868.jpg" alt="" /></p>
+							<video></video>video of sealing the uC end
+							<p><img class="alignnone instruction" src="imgs/photography/sealed_band.jpg" alt="" /></p>
 							
 						</div>
 						<!-- END of WYSIWYG content__-->
 					</article>
 					<div class="nav-btns">
-						<a class="button" href="blog_pcb_ribbon.html">< Previous</a>
-						<a class="button align-right" href="blog_seal.html">Next ></a>
+						<a class="button" href="blog_program.html">< Previous</a>
+						<a class="button align-right" href="blog_complete.html">Next ></a>
 					</div>
 				</div>
 				<!-- END #blog-post -->

@@ -3,7 +3,6 @@
 	<head>
 		<meta charset="utf-8">
 		
-		
 		<link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon">
 		<link rel="icon" href="imgs/favicon.ico" type="image/x-icon">
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -69,9 +68,12 @@
 		
 		<!-- MAIN CONTENT SECTION  _____________________________________________-->
 		<section id="content" role="main">
+			
 			<div class="featured-image-header">
 				<div id="">
-				  <img src="imgs/MakingHeaderPics/programTongueWorldSmall.png">
+					<!--img src="imgs/photography/fullscreen01.jpg"alt="" /-->
+					<img src="imgs/MakingHeaderPics/RiBBON_CROP.png">
+					<!--img src="imgs/PalletteINSTRO/3_PCB_SET_CLAY.png"/-->
 				</div>
 			</div>
 			
@@ -166,7 +168,7 @@
 					</a>
 					
 					<a href="blog_pcb_ribbon.html">
-						<article>
+						<article class="active">
 							<div class="featured-image">
 								<img src="imgs/tiles/3_PCB_Set.jpg" alt="" />
 							</div>
@@ -183,7 +185,7 @@
 					</a>
 					
 					<a href="blog_program.html">
-						<article class="active">
+						<article>
 							<div class="featured-image">
 								<img src="imgs/tiles/4_Program.jpg" alt="" />
 							</div>
@@ -254,55 +256,128 @@
 				<!-- Shown Blog Post ___-->
 				<div id="blog-post">
 					<div class="nav-btns">
-						<a class="button" href="blog_pcb_ribbon.html">< Previous</a>
-						<a class="button align-right" href="blog_seal.html">Next ></a>
+						<a class="button" href="blog_pcb.html">< Previous</a>
+						<a class="button align-right" href="blog_program.html">Next ></a>
 					</div>
 					<article class="entry post">
 						<div class="entry-meta">
 							<div class="entry-date">
-								<strong>Step 5</strong> / Making Pallette
+								<strong>Step 4</strong> / Making Pallette
 							</div>
 						</div>
 						
 						<div class="entry-content">
 							<!-- Heading ___-->
-							<h1>Program Pallette</h1>
+							<h1>PCB Ribbon</h1>
 							
 							<!-- WYSIWYG content of post ___-->
 							<p>You will need:
 								<ul>
-									<li>Pallette sensor band</li>
-									<li>Firmware source files</li>
-									<li>Programming cable</li>
+									<li>Assembled PCBs</li>
+									<li>Ribbon cable</li>
+									<li>Energizer 376 cell batteries</li>
+									<li>Soldering iron</li>
+									<li>Solder wire</li>
+									<li>Wire cutter</li>
+									<li>Multimeter</li>
 									<li>CC Debugger</li>
-									<li>Windows environment</li>
-									<li>Bluegiga update tool</li>
-									<li>Android device</li>
-									<li>Pallette debugging app</li>
+									<li>Programming cable</li>
+									<li>Tape</li>
+									<li>Marker</li>
 								</ul>
 							</p>
 							
-							<p>The firmware runs on the Bluetooth enabled BLE113 microcontroller. We have made two versions of firmware: the <a href="https://github.com/DVLevine/Pallette-DEBUG">debugging firmware</a> is for checking whether the sensor band is working correctly; the <a href="https://github.com/DVLevine/PalletteBG">mouse controller firmware</a> enables the sensor band to control a mouse cursor using your tongue. First, you will need to install the <a href="http://www.ti.com/tool/flash-programmer">CC Debugger driver</a>, and the <a href="https://www.bluegiga.com/en-US/download/?file=wBrIIHK4TKqMqtbkkw2-XA&title=Bluetooth%2520Smart%2520Software%2520and%2520SDK%2520v.1.4.2&filename=Bluegiga_ble-1.4.2-130.exe">Bluegiga SDK</a> on a Windows environment.</p>
-							<h3>Program the debugging firmware</h3>
-							<p>You will need to download the <a href="https://github.com/DVLevine/Pallette-DEBUG">debugging firmware files</a> and install the <a href="https://github.com/rohit-jain/pallette-app">Pallette debugging app</a> on an Android device. The app will display sensor reading values, so you can see whether they are correct or not. </p>
-							<p>(how to install the app)</p>
-							<p>Next, we need to assemble the sensor band with the programming cable and the CC Debugger, and connect the CC Debugger and your Windows environment with a mini USB cable. Upload the debugging firmware file to the microcontroller using the Bluegiga update tool.</p>
-							<div class="video-wrapper">
-								<iframe src="https://www.youtube.com/embed/NIX1ft5EmCk" frameborder="0" allowfullscreen></iframe>
+							<p>Now you should have boards that look like this:
+								<ol>
+									<li>The Battery Board
+										<p><img class="alignnone instruction" src="imgs/photography/pcbs/DSC06659.jpg" alt="" /></p>
+									</li>
+									<li>The Voltage Regulator Board
+										<p><img class="alignnone instruction" src="imgs/photography/pcbs/DSC06657.jpg" alt="" /></p>
+									</li>
+									<li>The Sensor Board
+										<p><img class="alignnone instruction" src="imgs/photography/pcbs/DSC06683.jpg" alt="" /></p>
+									</li>
+									<li>The Microcontroller Board
+										<p><img class="alignnone instruction" src="imgs/photography/pcbs/DSC06684.jpg" alt="" /></p>
+									</li>
+								</ol>
+							</p>
+							
+							<div class="colorful-content-box">
+								<p>Or alternatively this (photo features older design):</p>
+								<p><img class="alignnone instruction" src="imgs/photography/pcbs/DSC06667.jpg" alt="" /></p>
 							</div>
-							<h3>Program the mouse controller firmware</h3>
-							<p>Follow the same steps above to program the <a href="https://github.com/DVLevine/PalletteBG">mouse controller firmware</a>.</p>
-							<p>If everything works correctly, now your sensor band should be able to move a mouse cursor on a computer or a mobile device according to your finger movement. The next step is to seal the sensor band, so it's safe to use it inside your mouth.</p>
-							<div class="video-wrapper">
-								<iframe src="https://www.youtube.com/embed/cPJ-OwFIAhY" frameborder="0" allowfullscreen></iframe>
-							</div>
+							<h4>Trim the legs</h4>
+							<p>You need to trim the legs of the connectors with a cutter.</p>
+							
+							<p><img class="alignnone instruction" src="imgs/photography/pcbs/DSC06662.jpg" alt="" /></p>
+							<p><img class="alignnone instruction" src="imgs/photography/pcbs/DSC06663.jpg" alt="" /></p>
+							<p><img class="alignnone instruction" src="imgs/photography/pcbs/DSC06658.jpg" alt="" /></p>
+							<p><img class="alignnone instruction" src="imgs/photography/pcbs/DSC06665.jpg" alt="" /></p>
+							
+							<br />
+							<p>Now we have the little PCBs with components soldered on them, we need to connect them together to make a complete circuitry. However, before we do that, it's better to test each board to make sure that there are no soldering mistakes.</p>
+							
+							<h4>Test the Battery Board</h4>
+							<p>You need 2x batteries and a multimeter.</p>
+							<p><img class="alignnone instruction" src="imgs/photography/pcbs/DSC06690.jpg" alt="" /></p>
+							<p>Stack two batteries and tape their side together.</p>
+							<p><img class="alignnone instruction" src="imgs/photography/pcbs/DSC06688.jpg" alt="" /></p>
+							<p>Push the batteries inside the battery holder, positive side (flat side) up.</p>
+							<p><img class="alignnone instruction" src="imgs/photography/pcbs/DSC06701.jpg" alt="" /></p>
+							<p>If the batteries are too loose in the battery holder, add a bit of solder to the central round pad of the battery holder footprint.</p>
+							<p><img class="alignnone instruction" src="imgs/photography/pcbs/DSC06695.jpg" alt="" /></p>
+							<p>Turn on the switch by flipping the lever up, and measure the voltage across the 2 pin header, the reading should be around 3.1V.</p>
+							<p><img class="alignnone instruction" src="imgs/photography/pcbs/DSC06707.jpg" alt="" /></p>
+							
+							<h4>Test the Voltage Regulator Board</h4>
+							<p>Plug in the battery board to the voltage regulator board, and turn it on.</p>
+							<p><img class="alignnone instruction" src="imgs/photography/pcbs/DSC06711.jpg" alt="" /></p>
+							<p>Measure the output voltage from the regulator using the pads at the back of the board. The multimeter should read 2.2V.</p>
+							<p><img class="alignnone instruction" src="imgs/photography/pcbs/DSC06716.jpg" alt="" /></p>
+							<p><img class="alignnone instruction" src="imgs/photography/pcbs/DSC06714.jpg" alt="" /></p>
+							
+							<p>To test the Sensor Board and the Microcontroller Board, we need to connect them with ribbon cables. The next section shows you how.</p>
+							
+							<p>
+								With the clay imprint and the prepared PCB's, we're ready to craft the heart of Pallette - the sensor ribbon. You'll align the boards against the clay imprint, measure lengths and angles for ribbon cables, and solder everything together.
+							</p>
+							<h4>Connecting boards</h4>
+							<p><img class="alignnone instruction" src="imgs/photography/ribbon/DSC06742.jpg" alt="" /></p>
+							<p>Tape boards at desired locations</p>
+							<p><img class="alignnone instruction" src="imgs/photography/ribbon/DSC06744.jpg" alt="" /></p>
+							
+							<p>We will use 0.05" pitch ribbon cables to connect them. Cut two 5cm 2-conductor ribbon cables and a 5cm 6-conductor ribbon cable.</p>
+							<p><img class="alignnone instruction" src="imgs/photography/ribbon/DSC06747.jpg" alt="" /></p>
+							<p>Strip the ends of the ribbon cables.</p>
+							<p><img class="alignnone instruction" src="imgs/photography/ribbon/DSC06748.jpg" alt="" /></p>
+							<p>Tint the ends with solder.</p>
+							<p><img class="alignnone instruction" src="imgs/photography/ribbon/DSC06749.jpg" alt="" /></p>
+							<p>Solder the conductors on the pads at the back of the Voltage Regulator Board and the Microcontroller Board, and tape them back on the clay imprint.</p>
+							<p><img class="alignnone instruction" src="imgs/photography/ribbon/DSC06754.jpg" alt="" /></p>
+							<p>Align the Sensor Board, and mark the board edge with a pen.</p>
+							<p><img class="alignnone instruction" src="imgs/photography/ribbon/DSC06758.jpg" alt="" /></p>
+							<p>Mark the lengths of the ribbon cables using the pads on the back on the Sensor Board.</p>
+							<p><img class="alignnone instruction" src="imgs/photography/ribbon/DSC06760.jpg" alt="" /></p>
+							<p><img class="alignnone instruction" src="imgs/photography/ribbon/DSC06761.jpg" alt="" /></p>
+							<p><img class="alignnone instruction" src="imgs/photography/ribbon/DSC06762.jpg" alt="" /></p>
+							<p><img class="alignnone instruction" src="imgs/photography/ribbon/DSC06763.jpg" alt="" /></p>
+							<p>Cut the ribbon cables to the desired lengths, strip the ends, and solder the conductors to the corresponding pads.</p>
+							<p><img class="alignnone instruction" src="imgs/photography/ribbon/DSC06769.jpg" alt="" /></p>
+							<p><img class="alignnone instruction" src="imgs/photography/ribbon/DSC06779.jpg" alt="" /></p>
+							<p>Now we have the assembled sensor band.</p>
+							<p><img class="alignnone instruction" src="imgs/photography/ribbon/DSC06792.jpg" alt="" /></p>
+							
+							<p>We have to test the assembled Pallette sensor band to ensure that the circuit functions correctly before we seal it up. The next section explains how to use the firmware and the app to test the circuit. </p>
+							
 							
 						</div>
 						<!-- END of WYSIWYG content__-->
 					</article>
 					<div class="nav-btns">
-						<a class="button" href="blog_pcb_ribbon.html">< Previous</a>
-						<a class="button align-right" href="blog_seal.html">Next ></a>
+						<a class="button" href="blog_pcb.html">< Previous</a>
+						<a class="button align-right" href="blog_program.html">Next ></a>
 					</div>
 				</div>
 				<!-- END #blog-post -->
