@@ -703,11 +703,34 @@ body.fullscreen .position-absolute {
   position: relative;
 }
 
+
+
+/* Dan edits */
+
+
+/** Ultra Light */
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 100;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-ultralight-webfont.woff");
+}
+
+
+/* Dan edits */
+
+
+
 #blog-post h1 {
-  letter-spacing: .1em;
-  font-size: 2.3em;
-  font-weight: bold;
-  color: #000000;
+/*  letter-spacing: .1em;
+  font-size: 2.3em;*/
+  /*font-weight: bold;*/
+  /*color: #000000;*/
+  /* Dan Edits*/
+  font-size: 3em;
+  font-weight: 200;
+  color: #f23081;
+  font-family: 'San Francisco';
+  /* End Dan Edits*/
 }
 
 #blog-post .nav-btns {
@@ -771,6 +794,7 @@ body.fullscreen .position-absolute {
 
 #blog-timeline article.active {
   opacity: 1;
+  /*  background: #ff99af;*/
   background: #f23081;
   border-radius: 15px;
 }
@@ -797,9 +821,12 @@ body.fullscreen .position-absolute {
 }
 
 #blog-timeline article h2 {
-  font-size: 2em;
-  font-weight: 300;
-  color: #000000;
+    font-size: 2em;
+    font-weight:200;
+  /*font-weight: 300;*/
+/*  color: #000000;*/
+  color: black;
+  font-family: "San Francisco";
 }
 
 #blog-timeline article h2::before {
@@ -817,11 +844,12 @@ body.fullscreen .position-absolute {
 
 #blog-timeline article.active h2, #blog-timeline article:hover h2 {
   color: white;
-  font-weight: 400;
+  font-weight: 200;
 }
 
 #blog-timeline article.active p, #blog-timeline article:hover p {
-  opacity: 0.5;
+				     opacity: 0.9;
+				     color: white;
 }
 
 #blog-timeline article.active .featured-image::after {
@@ -989,6 +1017,12 @@ article h2 {
   font-weight: bold;
 }
 
+.entry-date strong:hover {
+  /*font-size: 1.2em;*/
+    font-weight: bold;
+/*    color:red;*/
+}
+
 .entry-tags a {
   display: inline-block;
   border-radius: 12px 3px 3px 12px;
@@ -1024,7 +1058,7 @@ article h2 {
 
 .entry-summary > p:first-child {
   font-style: italic;
-  font-size: 1em;
+  font-size: 0.85em;
   opacity: .8;
 }
 
