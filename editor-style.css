@@ -178,8 +178,13 @@ li {
   color: rgba(0, 0, 0, 0.4);
 }
 
-#contact p {
+#contact img {
+  top: 0;
+}
+
+#contact span {
   color: white;
+  background-color: #f23081;
 }
 
 .centerimage {
@@ -478,9 +483,10 @@ ul.aligncenter, .aligncenter ul, ol.aligncenter, .aligncenter ol {
 }
 
 .big, big {
-  font-size: 10em;
-  font-weight: 200;
-  line-height: 1.5;
+  font-size: 4em;
+  font-weight: normal;
+  line-height: 1;
+  text-align: center;
 }
 
 h2.big {
@@ -506,9 +512,15 @@ h6 .small, h6 .big, .small h6, .big h6 {
   line-height: 1;
 }
 
-.big i {
-  font-size: 1.4em;
-  font-weight: normal;
+ul.big {
+  list-style: none;
+  padding-left: 0;
+  padding-bottom: 0;
+}
+
+ul.big li {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
 }
 
 .extrabig i {
@@ -587,7 +599,6 @@ hr.divider {
   transition: all .2s ease;
 }
 
-
 .image-with-caption figcaption {
   position: absolute;
   width: 100%;
@@ -609,13 +620,13 @@ hr.divider {
 }
 
 .image-with-caption #Dan {
-    /*background-image: url("imgs/photography/dan.jpg");*/
-    background-image: url("imgs/photography/DanSkyBioPic.jpg");
+  /*background-image: url("imgs/photography/dan.jpg");*/
+  background-image: url("imgs/photography/DanSkyBioPic.jpg");
 }
 
 .image-with-caption:hover #Dan {
-    background-image: url("imgs/photography/dan2.jpg");
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("imgs/photography/dan2.jpg");
+  background-image: url("imgs/photography/dan2.jpg");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("imgs/photography/dan2.jpg");
 }
 
 .image-with-caption #Joanna {
@@ -628,12 +639,12 @@ hr.divider {
 }
 
 .image-with-caption #Oliver {
-    background-image: url("imgs/photography/oliver.jpg");
+  background-image: url("imgs/photography/oliver.jpg");
 }
 
 .image-with-caption:hover #Oliver {
-    background-image: url("imgs/photography/OliveCheeseBurger.jpg");
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("imgs/photography/OliveCheeseBurger.jpg");
+  background-image: url("imgs/photography/OliveCheeseBurger.jpg");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("imgs/photography/OliveCheeseBurger.jpg");
 }
 
 .image-with-caption #Rohit {
@@ -654,32 +665,34 @@ hr.divider {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("imgs/photography/shawn2.jpg");
 }
 
-
 /** DAN HACKY EDIT **/
 @font-face {
   font-family: "San Francisco";
   font-weight: 100;
   src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-ultralight-webfont.woff");
 }
+
 /** END DAN HACKY EDIT **/
 
 .image-with-caption p:first-of-type {
   /*font-family: Times, serif;*/
-    /*font-style: italic;*/    
+  /*font-style: italic;*/
   font-size: .9em;
   opacity: .8;
   font-weight: 500;
+
   /**text-shadow: 0 0 5px #f23081;**/
 }
 
 .image-with-caption h2:first-of-type {
   /*font-family: Times, serif;*/
-    /*font-style: italic;*/
-    font-family: "San Francisco";
-    font-size: 1.5em;
-/** font-size: .9em;
-  opacity: .8;**/
- /**   font-size: 2em;**/
+  /*font-style: italic;*/
+  font-family: "San Francisco";
+  font-size: 1.5em;
+
+  /** font-size: .9em;
+    opacity: .8;**/
+  /**   font-size: 2em;**/
 }
 
 img.alignleft {
