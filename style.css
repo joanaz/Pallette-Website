@@ -2129,8 +2129,8 @@ _____________________________________ */
 #footer p.copyright {
   display: inline-block;
   text-align: right;
-  padding-left: 1em;
-  color: rgba(0, 0, 0, 0.3);
+  vertical-align: top;
+  color: rgba(0, 0, 0, 0.5);
 }
 
 #footer p.back-to-top {

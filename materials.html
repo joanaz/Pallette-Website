@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		
+		<link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="imgs/favicon.ico" type="image/x-icon">
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+		<title>Pallette: Open Source Tongue-Computer Interface</title>
+		<meta name="description" content="A wireless universal remote control for the tongue, Pallette aims to provide greater independence for the mobility impaired.">
+		
+		<!-- Facebook metadata -->
+		<meta property="og:title" content="Pallette, the World's First Open Source Tongue-Computer Interface"/>
+		<meta property="og:type" content="website"/>
+		<meta property="og:image" content="imgs/Palette-Logo.png"/>
+		<meta property="og:url" content="http://www.pallette.io"/>
+		<meta property="og:description" content="Telekinesis with your tongue :p"/>
+		
+		<!-- CSS _____________________________________________-->
+		<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans:400,300,200,700" />
+		<link rel="stylesheet" href="css/icomoon.css" media="screen" />
+		<link rel="stylesheet" href="css/magnificpopup.css" media="screen" />
+		<link rel="stylesheet" href="css/columns.min.css" media="screen" />
+		<link rel="stylesheet" href="style.css" media="screen" />
+		<!-- Fixing Internet Explorer ______________________________________-->
+		<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<link rel="stylesheet" href="css/ie.css" />
+		<![endif]-->
+	</head>
+	<body class="blog post">
+		<!-- Loader _______________________________-->
+		<div class="loadreveal"></div>
+		<div id="loadscreen"><div id="loader"><span></span></div></div>
+		<!-- HEADER _____________________________________________-->
+		<header role="banner" id="header">
+			
+			<div class="wrapper">
+				<!-- Logo __-->
+				<a href="index.html" rel="home">
+					<img class="image-fit" src="imgs/logo-pallette.png" alt="logo">
+					<img class="image-fit padding-left" src="imgs/pallette@2x.png" alt="logo">
+				</a>
+				
+				<!-- Main menu __-->
+				<nav id="mainmenu" role="navigation">
+					
+					<div id="menu-burger"><i class="icon-menu"></i></div>
+					<div id="menu">
+						<ul>
+							<li><a href="about.html">What is it?</a></li>
+							<li class="current-menu-item"><a href="instructions.html">Make it!</a></li>
+							<li><a href="use.html">Use it!</a></li>
+							<!-- <li><a href="backstory.html">Backstory</a></li> -->
+							<li><a href="contact.html">Get in Touch</a></li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+			<!-- END .wrapper -->
+			
+		</header>
+		
+		
+		<!-- MAIN CONTENT SECTION  _____________________________________________-->
+		<section id="content" role="main">
+			<div class="featured-image-header">
+				<div id="">
+					<img src="imgs/MakingHeaderPics/materials.JPG"alt="" />
+				</div>
+			</div>
+			<div class="wrapper">
+				
+				<!-- Grid buttons ___-->
+				<nav id="grid-changer">
+					<ul>
+						<li class="col-3"><a href="javascript:void(0)" class="active">
+							<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+								<rect width="10" height="10" x="8"   y="8" />
+							</svg>
+						</a></li>
+						<li class="col-5"><a href="javascript:void(0)">
+							<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+								<rect width="7" height="7" x="6"   y="6" />
+								<rect width="7" height="7" x="14" y="6" />
+								<rect width="7" height="7" x="6" y="14" />
+								<rect width="7" height="7" x="14" y="14" />
+							</svg>
+						</a></li>
+					</ul>
+				</nav>
+				<div id="blog-timeline">
+					<a href="materials.html">
+						<article class="active">
+							<div class="featured-image">
+								<img src="imgs/MakingTilePics/MaterialsTile.png" alt="" />
+							</div>
+							<div class="entry-meta">
+								<div class="entry-date">
+									<strong> Step 0 </strong>
+								</div>
+							</div>
+							<h2>Materials</h2>
+							<div class="entry-summary">
+								<p>Getting materials together</p>
+							</div>
+						</article>
+					</a>
+					
+					<a href="mouthguard.html">
+						<article>
+							<div class="featured-image">
+								<img src="imgs/MakingTilePics/Mouthguard.png" alt="" />
+							</div>
+							<div class="entry-meta">
+								<div class="entry-date">
+									<strong>Step 1</strong>
+								</div>
+							</div>
+							<h2>Mouthguard</h2>
+							<div class="entry-summary">
+								<p>Begin by fitting your mouth</p>
+							</div>
+						</article>
+					</a>
+					
+					<a href="imprint.html">
+						<article>
+							<div class="featured-image">
+								<img src="imgs/MakingTilePics/Imprint.png" alt="" />
+							</div>
+							<div class="entry-meta">
+								<div class="entry-date">
+									<strong>Step 2</strong>
+								</div>
+							</div>
+							<h2>Imprint</h2>
+							<div class="entry-summary">
+								<p>Use clay to achieve the overall shape of your upper teeth</p>
+							</div>
+						</article>
+					</a>
+					
+					<a href="reflow.html">
+						<article>
+							<div class="featured-image">
+								<img src="imgs/MakingTilePics/Reflow.png" alt="" />
+							</div>
+							<div class="entry-meta">
+								<div class="entry-date">
+									<strong>Step 3</strong>
+								</div>
+							</div>
+							<h2>*Reflow</h2>
+							<div class="entry-summary">
+								<p>Optional, reflow soldering of Pallette PCBs</p>
+							</div>
+						</article>
+					</a>
+					
+					<a href="ribbon.html">
+						<article>
+							<div class="featured-image">
+								<img src="imgs/MakingTilePics/Ribbon.png" alt="" />
+							</div>
+							<div class="entry-meta">
+								<div class="entry-date">
+									<strong>Step 4</strong>
+								</div>
+							</div>
+							<h2>Ribbon</h2>
+							<div class="entry-summary">
+								<p>Connect boards via ribbon cables according to the form of your mouth</p>
+							</div>
+						</article>
+					</a>
+					
+					<a href="program.html">
+						<article>
+							<div class="featured-image">
+								<img src="imgs/MakingTilePics/Program.png" alt="" />
+							</div>
+							<div class="entry-meta">
+								<div class="entry-date">
+									<strong>Step 5</strong>
+								</div>
+							</div>
+							<h2>Program</h2>
+							<div class="entry-summary">
+								<p>Upload firmware and observe interaction</p>
+							</div>
+						</article>
+					</a>
+					
+					<a href="seal.html">
+						<article>
+							<div class="featured-image">
+								<img src="imgs/MakingTilePics/Seal.png" alt="" />
+							</div>
+							<div class="entry-meta">
+								<div class="entry-date">
+									<strong>Step 6</strong>
+								</div>
+							</div>
+							<h2>Seal</h2>
+							<div class="entry-summary">
+								<p>Waterproof the Pallette electronics</p>
+							</div>
+						</article>
+					</a>
+					
+					<a href="sew.html">
+						<article>
+							<div class="featured-image">
+								<img src="imgs/MakingTilePics/Complete.png" alt="" />
+							</div>
+							<div class="entry-meta">
+								<div class="entry-date">
+									<strong>Step 7</strong>
+								</div>
+							</div>
+							<h2>Complete</h2>
+							<div class="entry-summary">
+								<p>Unite form and function</p>
+							</div>
+						</article>
+					</a>
+					<a href="finish.html">
+						<article>
+							<div class="featured-image">
+								<img src="imgs/MakingTilePics/FutureTile.png" alt="" />
+							</div>
+							<div class="entry-meta">
+								<div class="entry-date">
+									<strong>Step 8</strong>
+								</div>
+							</div>
+							<h2>Finish!</h2>
+							<div class="entry-summary">
+								<p>Take Pallette further</p>
+							</div>
+						</article>
+					</a>
+				</div>
+				<!-- END #blog-timeline -->
+				
+				<!-- Shown Blog Post ___-->
+				<div id="blog-post">
+					<div class="nav-btns">
+						<a class="button" href="instructions.html">< Previous</a>
+						<a class="button align-right" href="mouthguard.html">Next ></a>
+					</div>
+					<article class="entry post">
+						<!-- Post meta ___-->
+						<div class="entry-meta">
+							<div class="entry-date">
+								<strong>Step 0</strong> / Making Pallette
+							</div>
+						</div>
+						
+						<div class="entry-content">
+							<!-- Heading ___-->
+							<h1>Materials</h1>
+							
+							<!-- WYSIWYG content of post ___-->
+							<p> Before jumping in we'll need to make sure you're prepared. The table below details the different components you'll need to make Pallette. Each item links to where you can obtain it. We left checkboxes so you can keep a checklist of what you have.</p>
+							
+							<table class="material">
+								<tr>
+									<th> Tools </th>
+									<th> Parts </th>
+									<th> Source files </th>
+								</tr>
+								<tr>
+									<td>
+										<label class="pallette-checkbox">
+											<input type="checkbox"><span></span>
+											<a href="https://amzn.com/B004Q04X44" target="_blank">Medium Power Heat Gun</a>
+										</label>
+										<label class="pallette-checkbox">
+											<input type="checkbox"><span></span>
+											<a href="https://amzn.com/B002BAHF8W" target="_blank">Dremel</a>
+										</label>
+										<label class="pallette-checkbox">
+											<input type="checkbox"><span></span>
+											<a href="https://amzn.com/B00ANZRT4M" target="_blank">Soldering Iron</a>
+										</label>
+										<label class="pallette-checkbox">
+											<input type="checkbox"><span></span>
+											<a href="https://amzn.com/B004OR6BZ8" target="_blank">Soldering Iron Tip</a>
+										</label>
+										<label class="pallette-checkbox">
+											<input type="checkbox"><span></span>
+											<a href="https://amzn.com/B00HKJPX06" target="_blank">RoHS Compliant Solder</a>
+										</label>
+										<label class="pallette-checkbox">
+											<input type="checkbox"><span></span>
+											<a href="https://amzn.com/B003E48ERU" target="_blank">Desoldering Wick</a>
+										</label>
+										<label class="pallette-checkbox">
+											<input type="checkbox"><span></span>
+											<a href="https://amzn.com/B0001K9W58" target="_blank">Wire Stripper</a>
+										</label>
+										<label class="pallette-checkbox">
+											<input type="checkbox"><span></span>
+											<a href="https://amzn.com/B0001K9W58" target="_blank">Wire Cutter</a>
+										</label>
+										<label class="pallette-checkbox">
+											<input type="checkbox"><span></span>
+											<a href="http://www.tag-connect.com/node/143" target="_blank">Programming Cable</a>
+										</label>
+										<label class="pallette-checkbox">
+											<input type="checkbox"><span></span>
+											<a href="http://www.ti.com/tool/cc-debugger" target="_blank">CC Debugger</a>
+										</label>
+										<label class="pallette-checkbox">
+											<input type="checkbox"><span></span>
+											<a href="https://amzn.com/B00NWGZ3A6" target="_blank">Multimeter</a>
+										</label>
+										<label class="pallette-checkbox">
+											<input type="checkbox"><span></span>
+											Android Device
+										</label>
+									</td>
+									<td>
+										<label class="pallette-checkbox">
+											<input type="checkbox"><span></span>
+											<a href="http://www.sisuguard.com/aero-guard/" target="_blank">Sisu Mouthguard</a>
+										</label>
+										<label class="pallette-checkbox">
+											<input type="checkbox"><span></span>
+											<a href="" target="_blank">acrylated olefin heat shrink</a>
+										</label>
+										<label class="pallette-checkbox">
+											<input type="checkbox"><span></span>
+											<a href="" target="_blank">0.5 Nylon tubing </a>
+										</label>
+										<label class="pallette-checkbox">
+											<input type="checkbox"><span></span>
+											<a href="" target="_blank">0.5 OD Silicone Suba Stopper </a>
+										</label>
+										<label class="pallette-checkbox">
+											<input type="checkbox"><span></span>
+											<a href="https://amzn.com/B014SRY5FG" target="_blank">Suture Thread with Needle</a>
+										</label>
+										<label class="pallette-checkbox">
+											<input type="checkbox"><span></span>
+											<a href="https://amzn.com/B002VBXL34" target="_blank">Air-Dry Clay</a>
+										</label>
+										<label class="pallette-checkbox">
+											<input type="checkbox"><span></span>
+											<a href="https://amzn.com/B000RB0AMK" target="_blank">Energizer 376 Cell Battery</a>
+										</label>
+										<label class="pallette-checkbox">
+											<input type="checkbox"><span></span>
+											<a href="http://www.digikey.com/product-detail/en/3m/3365-06-300SF/MC06G-10-ND/1832098" target="_blank">Ribbon Cable 0.05" Pitch</a>
+										</label>
+										<label class="pallette-checkbox">
+											<input type="checkbox"><span></span>
+											Pallette PCBs
+										</label>
+									</td>
+									<td>
+										<label class="pallette-checkbox">
+											<input type="checkbox"><span></span>
+											<a href="https://github.com/joanaz/Pallette-Hardware" target="_blank">Hardware Design Files</a>
+										</label>
+										<label class="pallette-checkbox">
+											<input type="checkbox"><span></span>
+											<a href="https://github.com/DVLevine/Pallette-DEBUG" target="_blank">Debugging Firmware</a>
+										</label>
+										<label class="pallette-checkbox">
+											<input type="checkbox"><span></span>
+											<a href="https://github.com/DVLevine/PalletteBG" target="_blank">Mouse Controller Firmware</a>
+										</label>
+										<label class="pallette-checkbox">
+											<input type="checkbox"><span></span>
+											<a href="https://github.com/rohit-jain/pallette-app" target="_blank">Android Debugging App</a>
+										</label>
+										<label class="pallette-checkbox">
+											<input type="checkbox"><span></span>
+											<a href="http://www.ti.com/tool/flash-programmer" target="_blank">CC Debugger Driver*</a>
+										</label>
+										<label class="pallette-checkbox">
+											<input type="checkbox"><span></span>
+											<a href="https://www.bluegiga.com/en-US/download/?file=wBrIIHK4TKqMqtbkkw2-XA&title=Bluetooth%2520Smart%2520Software%2520and%2520SDK%2520v.1.4.2&filename=Bluegiga_ble-1.4.2-130.exe" target="_blank">Bluegiga SDK*</a>
+										</label>
+									</td>
+								</tr>
+							</table>
+							<div class="notice note">
+								<p>You will need a <strong>Windows environment</strong> to install the CC Debugger driver and the Bluegiga SDK, in order to program the Pallette sensor band.</p>
+							</div>
+
+							<h3>Pallette PCBs</h3>
+							<p>PCB manufacturing takes time, so it's better to order the PCBs first. Send the <strong><a href="https://github.com/joanaz/Pallette-Hardware/raw/master/Pallette_Rev1_Fabrication.zip" target="_blank">Pallette fabrication zip file</a></strong> inside the hardware design files folder to a PCB manufacturer to receive the Pallette PCBs. You can get a quote <a href="http://www.4pcb.com/instant_quote/index.html" target="_blank">here</a> with your desired quantity and turn time. With the fabrication information in the design file, you will get 0.014 inch FR-370HR boards with gold immersion finish, white soldermask, black silkscreen and v-scores, which will be quite pricey (~$100 each for 10 boards and 5-day turn time). </p>
+							
+							<p><img class="alignnone instruction" src="imgs/materials/DSC06584.JPG" alt="" /></p>
+							<p><img class="alignnone instruction" src="imgs/materials/DSC06589.JPG" alt="" /></p>
+							<div class="colorful-content-box">
+								<p>Alternatively, you can get the boards for $33 each with this <a href="http://www.4pcb.com/pcb-prototype-2-4-layer-boards-specials.html" target="_blank">special deal</a>. However the boards will be 4x thick (FR-4 0.062" material) with lead-free solder finish, green soldermask and white silkscreen. (Photos below feature an older design)</p>
+								<p><img class="alignnone instruction" src="imgs/materials/DSC06576.JPG" alt="" /></p>
+								<p><img class="alignnone instruction" src="imgs/materials/DSC06583.JPG" alt="" /></p>
+								<p>They won't come with v-scores, so you'll have to cut the boards along the thick white lines with a Dremel. </p>
+								<p><img class="alignnone instruction" src="imgs/materials/DSC06595.JPG" alt="" /></p>
+							</div>
+
+							<h3>PCB Assembly</h3>
+							<p>To get PCBs assembled, you can either send the PCBs and <a href="https://github.com/joanaz/Pallette-Hardware/raw/master/Pallette_Rev1_Fabrication.zip" target="_blank">fabrication zip file</a> to a PCB assembler, or reflow solder the PCBs yourself. The PCB assembler charges the cost based on the quantity of your order, component cost and turn time. (You can get a quote <a href="http://www.4pcb.com/Assembly-Services.html" target="_blank">here</a>.) The approximate labour cost for assemble 10 boards at 5-day turn time is around $150 per board; component cost is <$30 per board. On the other hand, if you want to do reflow soldering yourself, you will need to buy electronic components and additional tools:</p>
+							
+							<table class="material">
+								<tr>
+									<th>Additional materials for reflow soldering</th>
+								</tr>
+								<tr>
+									<td>
+										<label class="pallette-checkbox">
+											<input type="checkbox"><span></span>
+											<a href="http://www.digikey.com/short/3hz814" target="_blank">Electronic Components*</a>
+										</label>
+										<label class="pallette-checkbox">
+											<input type="checkbox"><span></span>
+											<a href="http://www.digikey.com/product-detail/en/chip-quik-inc/SMD291SNL/SMD291SNL-ND/1160001" target="_blank">RoHS Compliant Solder Paste</a>
+										</label>
+										<label class="pallette-checkbox">
+											<input type="checkbox"><span></span>
+											<a href="http://www.digikey.com/product-detail/en/chip-quik-inc/SMD291NL/SMD291NL-ND/1160000" target="_blank">RoHS Compliant Flux</a>
+										</label>
+										<label class="pallette-checkbox">
+											<input type="checkbox"><span></span>
+											<a href="https://amzn.com/B01564B882" target="_blank">Electronic Hot Plate Preheating Station</a> or <a href="https://amzn.com/B01JE6EX1C" target="_blank">Hot Air Soldering Rework Station</a>
+										</label>
+										<label class="pallette-checkbox">
+											<input type="checkbox"><span></span>
+											<a href="https://amzn.com/B00A9MRI3G" target="_blank">Tweezers</a>
+										</label>
+									</td>
+								</tr>
+							</table>
+							<div class="notice note">
+								<p>This is a Digi-Key cart for 10 boards worth of components. To see the Bill of Materials for <strong>one</strong> board, click <a href="https://github.com/joanaz/Pallette-Hardware/raw/master/Pallette_Rev1_Fabrication/BOM/Bill%20of%20Materials-Pallette_Rev1.xls" target="_blank">here</a>.</p>
+							</div>
+							<p><a href="reflow.html">Step 3</a> will explain how to do reflow soldering in detail. But while you wait for the PCBs to arrive from the manufacturer, you can start making a Pallette device by following the next step - fitting a mouthguard.</p>
+							
+						</div>
+						<!-- END of WYSIWYG content__-->
+					</article>
+					<div class="nav-btns">
+						<a class="button" href="instructions.html">< Previous</a>
+						<a class="button align-right" href="mouthguard.html">Next ></a>
+					</div>
+				</div>
+				<!-- END #blog-post -->
+			</div>
+			<!-- END .wrapper -->
+		</section>
+		
+		<footer id="footer" role="contentinfo">
+			<p class="back-to-top"><a href="#header">Back to top ↑</a></p>
+			<p class="copyright">Pallette &copy; 2016</p>
+			<ul class="social-icons">
+				<li><a href="mailto:contact@pallette.io" target="_blank" title="Email"><i class="icon-email"></i></a></li>
+				<li><a href="https://twitter.com/PalletteIO" target="_blank" title="Twitter"><i class="icon-twitter"></i></a></li>
+				<li><a href="https://www.youtube.com/channel/UCL6c0D4ZrR4Z8MAq5emPx4Q" target="_blank" title="Youtube"><i class="icon-youtube"></i></a></li>
+				<li><a href="https://github.com/joanaz/Pallette-Website" target="_blank" title="Github"><i class="icon-github"></i></a></li>
+			</ul>
+		</footer>
+		<!-- Javascripts ______________________________________-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/retina.min.js"></script>
+		<script src="js/imagesloaded.pkgd.min.js"></script>
+		<script src="js/jquery.lazyloadxt.min.js"></script>
+		<!-- include Masonry -->
+		<script src="js/isotope.pkgd.min.js"></script>
+		<!-- include image popups -->
+		<script src="js/jquery.magnific-popup.min.js"></script>
+		<!-- include svg line drawing plugin -->
+		<script src="js/jquery.lazylinepainter.min.js"></script>
+		<!-- include custom script -->
+		<script src="js/scripts.js"></script>
+		<!-- Google Analytics -->
+		<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+		ga('create', 'UA-83439000-1', 'auto');
+		ga('send', 'pageview');
+		</script>
+	</body>
+</html>

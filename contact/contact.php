@@ -46,7 +46,7 @@ if(get_magic_quotes_gpc()) {
 // Example $address = "joe.doe@yourdomain.com";
 
 //$address = "example@themeforest.net";
-$address = "example@themeforest.net";
+$address = "contact@pallette.io";
 
 
 // Configuration option.
@@ -54,7 +54,8 @@ $address = "example@themeforest.net";
 
 // Example, $e_subject = '$name . ' has contacted you via Your Website.';
 
-$e_subject = 'You\'ve been contacted by ' . $name . '.';
+// $e_subject = 'You\'ve been contacted by ' . $name . '.';
+$e_subject = '[Pallette] ' . $name . ' has contacted you.';
 
 
 // Configuration option.
@@ -63,7 +64,7 @@ $e_subject = 'You\'ve been contacted by ' . $name . '.';
 
 $e_body = "You have been contacted by $name with regards to:" . PHP_EOL . PHP_EOL;
 $e_content = "\"$comments\"" . PHP_EOL . PHP_EOL;
-$e_reply = "You can contact $name via email, $email or via phone $phone";
+$e_reply = "You can contact $name via email, $email";
 
 $msg = wordwrap( $e_body . $e_content . $e_reply, 70 );
 
@@ -86,6 +87,6 @@ if(mail($address, $e_subject, $msg, $headers)) {
 
 } else {
 
-	echo '<div>An example email not sent!</div>';
+	echo '<div>Error: email not sent!</div>';
 
 }
