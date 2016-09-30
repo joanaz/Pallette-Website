@@ -154,7 +154,7 @@ li {
 }
 
 #home h1 {
-  font-size: 4em;
+  font-size: 3em;
   font-weight: 200;
   line-height: 1.1;
   color: #f23081;
@@ -630,49 +630,48 @@ hr.divider {
 }
 
 .image-with-caption #Dan {
-  /*background-image: url("imgs/photography/dan.jpg");*/
-  background-image: url("imgs/photography/DanSkyBioPic.jpg");
+  background-image: url("imgs/team/DanSkyBioPic.jpg");
 }
 
 .image-with-caption:hover #Dan {
-  background-image: url("imgs/photography/dan2.jpg");
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("imgs/photography/dan2.jpg");
+  background-image: url("imgs/team/Dan.jpg");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("imgs/team/Dan.jpg");
 }
 
 .image-with-caption #Joanna {
-  background-image: url("imgs/photography/joanna.jpg");
+  background-image: url("imgs/team/Joanna.jpg");
 }
 
 .image-with-caption:hover #Joanna {
-  background-image: url("imgs/photography/joanna2.jpg");
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("imgs/photography/joanna2.jpg");
+  background-image: url("imgs/team/Joanna2.jpg");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("imgs/team/Joanna2.jpg");
 }
 
 .image-with-caption #Oliver {
-  background-image: url("imgs/photography/oliver.jpg");
+  background-image: url("imgs/team/Oliver.jpg");
 }
 
 .image-with-caption:hover #Oliver {
-  background-image: url("imgs/photography/OliveCheeseBurger.jpg");
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("imgs/photography/OliveCheeseBurger.jpg");
+  background-image: url("imgs/team/OliveCheeseBurger.jpg");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("imgs/team/OliveCheeseBurger.jpg");
 }
 
 .image-with-caption #Rohit {
-  background-image: url("imgs/photography/rohit.jpg");
+  background-image: url("imgs/team/Rohit.jpg");
 }
 
 .image-with-caption:hover #Rohit {
-  background-image: url("imgs/photography/rohit2.jpg");
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("imgs/photography/rohit2.jpg");
+  background-image: url("imgs/team/Rohit2.jpg");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("imgs/team/Rohit2.jpg");
 }
 
 .image-with-caption #Shawn {
-  background-image: url("imgs/photography/shawn.jpg");
+  background-image: url("imgs/team/Shawn.jpg");
 }
 
 .image-with-caption:hover #Shawn {
-  background-image: url("imgs/photography/shawn2.jpg");
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("imgs/photography/shawn2.jpg");
+  background-image: url("imgs/team/Shawn2.jpg");
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("imgs/team/Shawn2.jpg");
 }
 
 /** DAN HACKY EDIT **/

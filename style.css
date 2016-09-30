@@ -293,7 +293,7 @@ body.fullscreen #header {
 #loader span {
   display: block;
   height: 100%;
-  background: #f23081;#f23081;
+  background: #f23081;
   -webkit-animation: loadanim 3s linear;
   -moz-animation: loadanim 3s linear;
   -o-animation: loadanim 3s linear;
@@ -388,7 +388,7 @@ body.fullscreen #header {
 
 /* Navigation */
 #header nav {
-  width: 75%;
+  width: 70%;
   float: right;
   position: relative;
   top: 1em;
@@ -527,7 +527,9 @@ body.fullscreen #header {
   line-height: 36px;
   padding: 0 0 0 1.5em;
   z-index: 202;
-  color: #555;
+  color: rgba(0, 0, 0, 0.3);
+
+  //#555;
   vertical-align: middle;
   cursor: pointer;
 }
@@ -703,10 +705,7 @@ body.fullscreen .position-absolute {
   position: relative;
 }
 
-
-
 /* Dan edits */
-
 
 /** Ultra Light */
 @font-face {
@@ -715,14 +714,11 @@ body.fullscreen .position-absolute {
   src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-ultralight-webfont.woff");
 }
 
-
 /* Dan edits */
 
-
-
 #blog-post h1 {
-/*  letter-spacing: .1em;
-  font-size: 2.3em;*/
+  /*  letter-spacing: .1em;
+    font-size: 2.3em;*/
   /*font-weight: bold;*/
   /*color: #000000;*/
   /* Dan Edits*/
@@ -730,6 +726,7 @@ body.fullscreen .position-absolute {
   font-weight: 200;
   color: #f23081;
   font-family: 'San Francisco';
+
   /* End Dan Edits*/
 }
 
@@ -794,6 +791,7 @@ body.fullscreen .position-absolute {
 
 #blog-timeline article.active {
   opacity: 1;
+
   /*  background: #ff99af;*/
   background: #f23081;
   border-radius: 15px;
@@ -821,10 +819,11 @@ body.fullscreen .position-absolute {
 }
 
 #blog-timeline article h2 {
-    font-size: 2em;
-    font-weight:200;
+  font-size: 2em;
+  font-weight: 200;
+
   /*font-weight: 300;*/
-/*  color: #000000;*/
+  /*  color: #000000;*/
   color: black;
   font-family: "San Francisco";
 }
@@ -848,8 +847,8 @@ body.fullscreen .position-absolute {
 }
 
 #blog-timeline article.active p, #blog-timeline article:hover p {
-				     opacity: 0.9;
-				     color: white;
+  opacity: 0.9;
+  color: white;
 }
 
 #blog-timeline article.active .featured-image::after {
@@ -974,8 +973,6 @@ article h2 {
   top: -25%;
 }
 
-
-
 .entry-meta > div {
   display: inline-block;
   vertical-align: baseline;
@@ -1017,8 +1014,9 @@ article h2 {
 
 .entry-date strong:hover {
   /*font-size: 1.2em;*/
-    font-weight: bold;
-/*    color:red;*/
+  font-weight: bold;
+
+  /*    color:red;*/
 }
 
 .entry-tags a {
@@ -2062,9 +2060,9 @@ ol.comment-list li article {
 }
 
 .blog-oneline-carousel ul li {
-  height: 3em;
-  font-size: 2.3em;
-  color: rgba(0, 0, 0, 0.3);
+  height: 2em;
+  font-size: 1.7em;
+  color: rgba(0, 0, 0, 0.4);
   line-height: 1.4;
   mix-blend-mode: multiply;
 }
@@ -2232,6 +2230,7 @@ _____________________________________ */
   /*sliding menu*/
   #header nav {
     top: 0;
+    width: 30%;
   }
 
   #header nav #searchicon i {
@@ -2287,7 +2286,7 @@ _____________________________________ */
   }
 
   #header nav ul li a {
-    color: rgba(0, 0, 0, 0.3) !important;
+    color: white !important;
   }
 
   #header nav ul.sub-menu {
@@ -2302,6 +2301,11 @@ _____________________________________ */
     font-size: .8em;
     opacity: 1 !important;
     overflow: visible !important;
+  }
+
+  .blog-oneline-carousel ul li {
+    height: 1.7em;
+    font-size: 1.5em;
   }
 
   /*adapt fullscreen image width*/
@@ -2379,6 +2383,10 @@ _____________________________________ */
   /*header smaller space*/
   #header {
     padding-top: 1.5em;
+  }
+
+  #header nav {
+    width: 20%;
   }
 
   body #content > .wrapper {
@@ -2509,8 +2517,11 @@ _____________________________________ */
   }
 
   .blog-oneline-carousel ul li {
-    line-height: 1.3;
+    line-height: 1.5;
     padding-top: 5px;
+    font-size: 1em;
+    height: 2.5em;
+    font-weight: 400;
   }
 
   #footer, body.fullscreen #footer {
@@ -2523,6 +2534,17 @@ _____________________________________ */
   /*header smaller space*/
   #header {
     padding-top: 2em;
+  }
+
+  #home h1 {
+    font-size: 2em;
+  }
+
+  .blog-oneline-carousel ul li {
+    line-height: 1.5;
+    padding-top: 5px;
+    font-size: 1em;
+    height: 2.5em;
   }
 
   /*galleries adapted*/
