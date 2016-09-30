@@ -2585,4 +2585,12 @@ _____________________________________ */
   #home h1 {
     font-size: 2em;
   }
+
+  .justifyright {
+    text-align: left;
+  }
+
+  p.alignright, div.alignright {
+    margin-left: 0;
+  }
 }

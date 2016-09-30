@@ -178,17 +178,17 @@ li {
   color: rgba(0, 0, 0, 0.4);
 }
 
-#use {
+#useit {
   font-family: 'San Francisco', 'Open Sans', sans-serif;
 }
 
-#use h1 {
+#useit h1 {
   font-size: 3em;
   font-weight: 200;
   color: #f23081;
 }
 
-#use p {
+#useit p {
   font-weight: 400;
   mix-blend-mode: multiply;
   font-size: 1.2em;
