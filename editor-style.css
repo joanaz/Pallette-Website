@@ -178,6 +178,24 @@ li {
   color: rgba(0, 0, 0, 0.4);
 }
 
+#use {
+  font-family: 'San Francisco', 'Open Sans', sans-serif;
+}
+
+#use h1 {
+  font-size: 3em;
+  font-weight: 200;
+  color: #f23081;
+}
+
+#use p {
+  font-weight: 400;
+  mix-blend-mode: multiply;
+  font-size: 1.2em;
+  line-height: 1.4;
+  color: rgba(0, 0, 0, 0.4);
+}
+
 #contact img {
   top: 0;
 }
@@ -363,7 +381,7 @@ p img, h2 img {
   padding-bottom: 55%;
   width: 100%;
   height: 0;
-  margin: 1.5em auto;
+  margin: 0 auto 1.5em;
   display: block;
   border: 10px solid white;
   border-radius: 20px;
@@ -1143,9 +1161,9 @@ cite {
 .colorful-content-box {
   background: #f23081;
   color: white;
-  padding: 1em 2em;
+  padding: 0 2em 1em;
   border-radius: 1em;
-  margin: 2em;
+  margin: 0 2em 2em;
 }
 
 .colorful-content-box a {

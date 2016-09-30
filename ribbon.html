@@ -335,26 +335,28 @@
 									</td>
 								</tr>
 							</table>
-
-							<p>Now you should have PCBs as shown below:
-								<ol>
-									<li>The Battery Board
-										<p><img class="alignnone instruction" src="imgs/reflow/DSC06659.JPG" alt="" /></p>
-									</li>
-									<li>The Voltage Regulator Board
-										<p><img class="alignnone instruction" src="imgs/reflow/DSC06657.JPG" alt="" /></p>
-									</li>
-									<li>The Sensor Board
-										<p><img class="alignnone instruction" src="imgs/reflow/DSC06683.JPG" alt="" /></p>
-									</li>
-									<li>The Microcontroller Board
-										<p><img class="alignnone instruction" src="imgs/reflow/DSC06684.JPG" alt="" /></p>
-									</li>
-								</ol>
-							</p>
+							<p>Now you should have PCBs as shown below:</p>
+							<ol>
+								<li>The Battery Board
+									<p><img class="alignnone instruction" src="imgs/reflow/DSC06659.JPG" alt="" /></p>
+									<p>The Battery Board consists of an on/off switch, a battery holder for two 376/377 cell batteries, and a male header to connect to the Voltage Regulator Board. This board outputs a voltage of 3.1V if the batteries are new. The Pallette circuit will continue to function until the battery voltage drops below 2.2V.</p>
+								</li>
+								<li>The Voltage Regulator Board
+									<p><img class="alignnone instruction" src="imgs/reflow/DSC06657.JPG" alt="" /></p>
+									<p>The Voltage Regulator Board converts the voltage from the Battery Board to 2.2V. It automatically maintains this voltage level to protect sensitive electronic components and ensure consistent sensor readings.</p>
+								</li>
+								<li>The Sensor Board
+									<p><img class="alignnone instruction" src="imgs/reflow/DSC06683.JPG" alt="" /></p>
+									<p>The Sensor Board has three infrared sensors, which are strategically positioned to track tongue movement accurately. It also has a golden microphone chip which detects tongue tapping, in order to register a selection.</p>
+								</li>
+								<li>The Microcontroller Board
+									<p><img class="alignnone instruction" src="imgs/reflow/DSC06684.JPG" alt="" /></p>
+									<p>The Microcontroller Board consists of a Bluetooth enabled Bluegiga BLE113 microcontroller and an in-circuit programming footprint. The microcontroller enables Pallette to wirelessly communicate with a computer or a mobile device. The programming footprint allows developers to program the microcontroller, either with our firmware, or their own firmware.</p>
+								</li>
+							</ol>
 							
 							<div class="colorful-content-box">
-								<p>Or the green thicker version (photo features older design):</p>
+								<p>If you ordered the 0.062" green PCBs, they will look like this (photo features an older design):</p>
 								<p><img class="alignnone instruction" src="imgs/ribbon/DSC06667.JPG" alt="" /></p>
 							</div>
 							<h4>Trim the leads</h4>
@@ -388,7 +390,6 @@
 							<p><img class="alignnone instruction" src="imgs/ribbon/DSC06714.JPG" alt="" /></p>
 							
 							<p>The Sensor Board and the Microcontroller Board can only be tested in the completed circuit. So next, we're ready to craft the heart of Pallette - the sensor ribbon.</p>
-
 							<h4>Connecting boards</h4>
 							<p>You'll align the boards against the clay imprint you made in Step 2, measure lengths and angles for ribbon cables, and solder everything together.</p>
 							<p><img class="alignnone instruction" src="imgs/ribbon/DSC06742.JPG" alt="" /></p>
@@ -403,7 +404,6 @@
 							<p>Now the wires are tinned.</p>
 							<p><img class="alignnone instruction" src="imgs/ribbon/DSC06749.JPG" alt="" /></p>
 							<p></p>
-
 							<p>Next, we need to solder a 2-conductor cable to the back of the Voltage Regulator Board. Refer to the photo below for the direction of the cable. </p>
 							<p>It's better to add solder to all the pads first, so it will be easier to solder the wires to them.</p>
 							<p>Next, we solder another 2-conductor cable to the back of the Microcontroller Board, and then solder a 6-conductor cable to the Microcontroller Board. </p>
