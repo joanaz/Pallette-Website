@@ -1,5 +1,7 @@
 # Pallette-Website
 
+![Pallette](/imgs/MakingHeaderPics/PalletteSpace.png)
+
 http://pallette.io
 
 Pallette is the world's first open source tongue-computer interface. It provides greater independence for the mobility impaired, and it's private, discreet, and affordable. It uses off-the-shelf components, so any developer/builder/hacker can follow the instructions and build Pallette from scratch.
