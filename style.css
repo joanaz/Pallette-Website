@@ -620,10 +620,13 @@ body.fullscreen .featured-image-header img {
 body.fullscreen #footer {
   position: absolute;
   bottom: 0;
-  padding-bottom: 3.5em;
+  padding-bottom: 2em;
+  left: 0;
   right: 0;
   z-index: 3;
-  color: white;
+  width: 100%;
+  min-height: 30px;
+  vertical-align: center;
 }
 
 /* Text on Dark Background (over images) */
@@ -658,13 +661,15 @@ body.fullscreen #header nav form#searchbar #searchbar-input {
 }
 
 body.fullscreen ul.social-icons, body.fullscreen #footer p {
-  vertical-align: bottom;
-  padding-bottom: 0;
+  float: right;
+  vertical-align: center;
+  margin: 0.5em 0;
+  padding-top: 15px;
   line-height: 1.1;
 }
 
 body.fullscreen ul.social-icons li a {
-  color: white;
+  color: #F23081;
 }
 
 body.fullscreen #footer p.back-to-top {
@@ -2091,9 +2096,27 @@ ol.comment-list li article {
 _____________________________________ */
 #footer {
   text-align: right;
-  padding: 2em 4.5% 0;
+  padding: 2em 4.5%;
   -webkit-transition: -webkit-transform 0.35s;
   transition: transform 0.35s;
+}
+
+.footer-logo {
+  position: relative;
+  float: left;
+  margin: 0.5em 1em;
+}
+
+.logo-ct {
+  width: 157px;
+  height: 30px;
+  background: url(imgs/logo-ct.png);
+}
+
+.logo-foundry {
+  width: 227px;
+  height: 30px;
+  background: url(imgs/logo-foundry.png);
 }
 
 .entry-social {
@@ -2123,9 +2146,10 @@ _____________________________________ */
 }
 
 #footer p.copyright {
+  padding: 0 1em;
   display: inline-block;
   text-align: right;
-  vertical-align: top;
+  vertical-align: center;
   color: rgba(0, 0, 0, 0.5);
 }
 
@@ -2146,7 +2170,7 @@ _____________________________________ */
 ul.social-icons {
   list-style: none;
   display: inline-block;
-  vertical-align: top;
+  vertical-align: center;
   padding: 0 0 0 .5em;
   line-height: 1.1;
   position: relative;
@@ -2303,7 +2327,7 @@ _____________________________________ */
 
   .blog-oneline-carousel ul li {
     height: 1.7em;
-    font-size: 1.5em;
+    font-size: 1.7em;
   }
 
   /*adapt fullscreen image width*/
@@ -2363,12 +2387,12 @@ _____________________________________ */
 
   /*footer smaller space*/
   #footer, body.fullscreen #footer {
-    padding-bottom: 2.5em;
+    padding-bottom: 1.5em;
   }
 
   #footer p.back-to-top {
     position: relative;
-    padding: 0 0 0 1em;
+    padding: 0 1em;
   }
 
   ul.social-icons {
