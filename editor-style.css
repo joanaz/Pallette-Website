@@ -123,14 +123,10 @@ table {
 --------------------------------------------------------- */
 html {
   font-family: 'Open Sans', sans-serif;
-
-  /*font-size: 62.5%;*/
 }
 
 body {
   font-family: 'Open Sans', sans-serif;
-
-  /*font-size: 1.8em;*/
   font-weight: 300;
   background: white;
   line-height: 1.5;

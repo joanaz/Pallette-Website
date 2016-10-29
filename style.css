@@ -219,6 +219,7 @@ html {
 }
 
 body {
+  height: 100%;
   background: white;
   color: black;
   font-size: 1.6em;
@@ -1390,7 +1391,8 @@ article h2 {
 .fullscreen-gallery .gallery-video {
   height: 100%;
   width: 100%;
-  background-size: cover;
+  background: url("imgs/HeroTongue.png") right bottom no-repeat;
+  background-size: contain;
 }
 
 .fullscreen-gallery .gallery-video video {
@@ -2104,19 +2106,19 @@ _____________________________________ */
 .footer-logo {
   position: relative;
   float: left;
-  margin: 0.5em 1em;
+  margin: 1em 2em 1em 0;
 }
 
 .logo-ct {
   width: 157px;
   height: 30px;
-  background: url(imgs/logo-ct.png);
+  background: url(imgs/logo-ct.png) left bottom no-repeat;
 }
 
 .logo-foundry {
   width: 227px;
   height: 30px;
-  background: url(imgs/logo-foundry.png);
+  background: url(imgs/logo-foundry.png) left bottom no-repeat;
 }
 
 .entry-social {
@@ -2411,6 +2413,20 @@ _____________________________________ */
     width: 20%;
   }
 
+  body.fullscreen #header .image-fit {
+    width: 10vw;
+    min-width: 20px;
+  }
+
+  body.fullscreen #header .image-fit + .padding-left {
+    width: 30vw;
+    min-width: 75px;
+  }
+
+  #home h1 {
+    font-size: calc(5vw + 1em);
+  }
+
   body #content > .wrapper {
     padding-top: 2em;
   }
@@ -2484,6 +2500,11 @@ _____________________________________ */
     padding-bottom: 1.5em;
   }
 
+  .fullscreen-gallery .gallery-video {
+    background-position: center bottom;
+    background-size: cover;
+  }
+
   .vertical-gallery.gallery {
     height: 400px;
     margin-top: 2em;
@@ -2547,7 +2568,28 @@ _____________________________________ */
   }
 
   #footer, body.fullscreen #footer {
-    padding-bottom: 1.5em;
+    /*padding-bottom: 1.5em;*/
+  }
+
+  .footer-logo {
+    margin: 1em 1em 1em 0;
+    background-size: contain;
+    height: 4vw;
+    min-height: 15px;
+  }
+
+  .logo-ct {
+    width: 20vw;
+    min-width: 75px;
+  }
+
+  .logo-foundry {
+    width: 30vw;
+    min-width: 110px;
+  }
+
+  body.fullscreen ul.social-icons li {
+    padding: 0 0 0 0.5em;
   }
 }
 
@@ -2558,15 +2600,26 @@ _____________________________________ */
     padding-top: 2em;
   }
 
+  body.fullscreen #header .image-fit {
+    height: 10vh;
+    min-height: 25px;
+  }
+
   #home h1 {
-    font-size: 2em;
+    font-size: 8vh;
+  }
+
+  .blog-oneline-carousel .viewport {
+    float: left;
+    width: 100%;
+    height: 2em;
   }
 
   .blog-oneline-carousel ul li {
-    line-height: 1.5;
+    line-height: 1.2;
     padding-top: 5px;
     font-size: 1em;
-    height: 2.5em;
+    height: 2em;
   }
 
   /*galleries adapted*/
@@ -2574,8 +2627,33 @@ _____________________________________ */
     padding-bottom: 2em;
   }
 
+  .fullscreen-gallery .gallery-video {
+    background-position: center center;
+    background-size: cover;
+  }
+
   .masonry-gallery .gallery-item {
     width: 98% !important;
+  }
+
+  body.fullscreen #footer {
+    padding-bottom: 0.2em;
+  }
+
+  .footer-logo {
+    height: 6vh;
+    min-height: 15px;
+    background-size: contain;
+  }
+
+  .logo-ct {
+    width: 30vh;
+    min-width: 75px;
+  }
+
+  .logo-foundry {
+    width: 45vh;
+    min-width: 110px;
   }
 }
 
@@ -2605,7 +2683,7 @@ _____________________________________ */
   }
 
   #home h1 {
-    font-size: 2em;
+    font-size: calc(5vw + 1em);
   }
 
   .justifyright {
